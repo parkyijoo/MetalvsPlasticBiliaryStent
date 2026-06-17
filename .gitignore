@@ -14,3 +14,4 @@ export/
 .Rhistory
 .RData
 .Rproj.user/
+.Renviron
