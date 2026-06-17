@@ -1,5 +1,5 @@
 ---
-title: "| RESEARCH PROTOCOL\n| \n| Study Repo Template \n"
+title: "| RESEARCH PROTOCOL\n| \n| Metal Biliary Stent versus Plastic Biliary Stent in Patients with Pancreatic Cancer: A Comparative Safety and Effectiveness Study \n"
 fontsize: 12pt
 geometry: margin=1in
 output:
@@ -49,7 +49,7 @@ longtable: yes
 mainfont: Arial
 bibliography: Protocol.bib
 params:
-  date: '28-Mar-2023'
+  date: '28-Mar-2025'
   version: 0.0.1
 subtitle: 'Version: `r params$version`'
 link-citations: yes
@@ -57,7 +57,6 @@ csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
-library(LegendT2dm)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 options(kableExtra.latex.load_packages = FALSE)
 library(kableExtra)
@@ -178,8 +177,30 @@ if (knitr::is_latex_output()) {
 ```
 
 # Rationale and Background
+Pancreatic cancer is an aggressive malignancy with a poor prognosis. At the time of diagnosis, the majority of patients present with biliary obstruction, which causes jaundice, pruritus, and cholangitis, significantly impairing quality of life and overall clinical status. Endoscopic retrograde cholangiopancreatography (ERCP)-guided biliary stent placement is the standard of care for palliating malignant biliary obstruction.
+
+Biliary stents are broadly classified by material into **Metal Biliary Stents (MS)** and **Plastic Biliary Stents (PS)**.
+| Characteristic | Metal Stent | Plastic Stent |
+|----------------|-------------|---------------|
+| Patency Duration | Long (6–12+ months) | Short (3–6 months) |
+| Cost | High | Low |
+| Exchangeability | Difficult (self-expanding) | Easy |
+| Need for Re-intervention | Low | High |
+
+Current domestic and international guidelines (ESGE, ASGE, KSGE) recommend **metal stent use** in patients with inoperable malignant biliary obstruction, based on evidence from randomized controlled trials (RCTs) showing superior patency and lower re-intervention rates compared to plastic stents. However, whether these guideline recommendations are equally supported by real-world data remains uncertain.
+
+Existing RCTs may not be representative of real-world clinical populations due to strict eligibility criteria. Real-world comparative evidence on safety (cholangitis) and effectiveness (re-intervention, survival) between the two stent types is limited. A large-scale observational study using the OHDSI Common Data Model (CDM) can validate the applicability of current guidelines in real-world settings.
 
 # Study Objectives
+The overall goal of this protocols is conducting comparative safety and effectiveness research to establish evidences for benefits and harms of metal and plastic stents in patients with pancreatic cancer through OHDSI network.
+
+The primary objective is to compare the clinical safety and effectiveness of **metal biliary stents** versus **plastic biliary stents** in patients with pancreatic cancer-related biliary obstruction using real-world data.
+
+Secondary objectives are:
+
+1. To compare the incidence of **acute cholangitis** between the two stent groups
+2. To compare the frequency of **biliary re-intervention** between the two stent groups
+3. To compare **all-cause mortality** between the two stent groups
 
 # Research Methods
 
@@ -187,29 +208,195 @@ if (knitr::is_latex_output()) {
 
 This study uses `CohortMethod` [@Schuemie2020-fa].
 
+This is a **observational study** based on a **new-user active comparator design** using the OHDSI CohortMethod package for population-level effect estimation (PLE).
+
+- **Index Date (Day 0):** Date of first biliary stent insertion (metal or plastic)
+- **Baseline Period:** 365 days prior to the index date (Day −365 to Day 0)
+- **Follow-up Period:** Day 1 through end of observation, death, or end of study period
+
 ## Data Sources
+The analyses will be performed across a network of observational healthcare databases.  All databases have been transformed into the OMOP Common Data Model, version 5.4.  The complete specification for OMOP Common Data Model, version 5.4 is available at:  https://github.com/OHDSI/CommonDataModel
 
 ## Study Population
 
+### Target Cohort — Metal Biliary Stent
+
+**Definition:** Patients with pancreatic cancer who received their first metal biliary stent insertion.
+
+**Inclusion Criteria:**
+
+| Criterion | Window | Description |
+|-----------|--------|-------------|
+| Metal biliary stent insertion | Day 0 | First-ever metal biliary stent insertion (Device Exposure) |
+| Age ≥ 18 years | Day 0 | |
+| Pancreatic cancer diagnosis | Any time before Day 0 | Any recorded diagnosis prior to or on index date |
+
+**Exclusion Criteria:**
+
+| Criterion | Window | Description |
+|-----------|--------|-------------|
+| Cholangiocarcinoma diagnosis | Any time before Day 0 | Any prior diagnosis of cholangiocarcinoma |
+
+### Comparator Cohort — Plastic Biliary Stent (ATLAS Cohort ID: 689)
+
+**Definition:** Patients with pancreatic cancer who received their first plastic biliary stent insertion.
+
+Inclusion and exclusion criteria are identical to the target cohort, differing only in the type of stent inserted.
+
+### Covariate Assessment Windows
+
+| Covariate Type | Window |
+|----------------|--------|
+| Demographics | Day 0 |
+| Short-term baseline conditions and medications | Day −30 to Day 0 |
+| Long-term baseline conditions and medications | Day −365 to Day 0 |
+
 ## Exposure Comparators
+
+### Target — Metal Biliary Stent
+
+Metal biliary stents are identified in the OMOP CDM `DEVICE_EXPOSURE` table using concept codes representing self-expandable metal stents (SEMS) and related devices (Codeset ID: 2, including descendant concepts for fully covered SEMS).
+
+Only the first-ever metal biliary stent insertion qualifies as the index event, fulfilling the new-user design requirement.
+
+### Comparator — Plastic Biliary Stent
+
+Plastic biliary stents are identified in the OMOP CDM `DEVICE_EXPOSURE` table using concept codes representing plastic biliary stent devices.
+
+Only the first-ever plastic biliary stent insertion qualifies as the index event.
 
 ## Outcomes {#outcomes}
 
+### Primary Outcomes
+
+| Outcome | Cohort ID | Definition |
+|---------|-----------|------------|
+| Acute Cholangitis (Tokyo Guideline 2018) | 697 | Clinical definition based on Tokyo Guidelines 2018 criteria (see below) |
+| Moderate Acute Cholangitis | 719 | Moderate severity per Tokyo Guidelines 2018 criteria |
+| Cholangitis (broad definition) | 663 | Based on diagnosis codes for cholangitis |
+| All-cause Mortality | 665 | Based on CDM Death table |
+
+### Acute Cholangitis Definition (Tokyo Guideline 2018)
+
+Acute cholangitis is defined as meeting **≥ 2** of the following criteria on the same date or within the same visit:
+
+| Criterion | Threshold | OMOP Concept ID |
+|-----------|-----------|-----------------|
+| Body Temperature | > 38.0°C | 3020891 |
+| WBC (inflammation) ① | > 10,000/μL | 3000905 |
+| WBC (inflammation) ② | > 2.0 × 10⁴/μL | 3024128 |
+| Total Bilirubin (jaundice) | ≥ 1.0 mg/dL | 3010156 |
+
+### Biliary Re-intervention
+
+Defined as a procedure code indicating biliary stent replacement, repair, or re-insertion occurring after Day 7 from the index date.
+
 ## Analysis
+
+### Covariates
+
+Propensity scores are estimated using large-scale covariate sets from the `FeatureExtraction` package. Concept codes directly related to stent insertion are excluded from the covariate set (`excludedCovariateConceptIds`).
+
+**Included Covariates:**
+
+| Domain | Detail | Window |
+|--------|--------|--------|
+| Demographics | Age group, sex, race, calendar month | Day 0 |
+| Conditions | Condition Group Era | Short-term (−30 to 0) |
+| Medications | Drug Group Era | Short-term (−30 to 0), Long-term (−365 to 0) |
+| Measurements | Measurement values | Long-term (−365 to 0) |
+| Measurement ranges | Measurement Range Group | Short-term, Long-term |
+| Observations | Observation | Short-term (−30 to 0) |
+| Composite indices | Charlson Comorbidity Index, DCSI, CHADS2Vasc | Day 0 |
+
+
+### Propensity Score Matching
+
+- **Model:** LASSO Logistic Regression (via `Cyclops` package)
+- **Matching:** 1:1 nearest-neighbor matching without replacement
+- **Caliper:** 0.2 (standardized logit scale)
+- **Common Support:** Preference score-based trimming (PS trimming)
+
+### Balance Assessment
+
+Covariate balance before and after matching is assessed using standardized mean differences (SMD). Target threshold: all covariates SMD ≤ 0.1 (or ≤ 0.25).
+
+### Follow-up Windows
+
+| Analysis ID | Description | Follow-up Period |
+|-------------|-------------|------------------|
+| 1 | ITT 1:1 PS Matching | 90 days |
+| 2 | ITT 1:1 PS Matching | 30 days |
+| 3 | ITT 1:1 PS Matching | 180 days |
+| 4 | ITT 1:1 PS Matching | 365 days |
+
+All analyses apply the intent-to-treat (ITT) principle.
+
+### Outcome Model
+
+- **Model:** Cox Proportional Hazard Model
+- **Effect Estimate:** Hazard Ratio (HR) with 95% Confidence Interval
+- **Primary Reporting Timepoint:** 365 days from index date (Analysis ID 4)
+- **Survival Visualization:** Kaplan-Meier survival curves
+
+### Empirical Calibration
+
+Negative control outcomes are used to assess and correct for residual confounding and systematic bias using the `EmpiricalCalibration` package.
+
+- **Negative Controls:** Outcomes with no known biological association with either stent type (see [Negative Control Concepts](#negative-control-concepts))
+- **Calibration Procedure:**
+  - Pre-calibration: Assess proportion of negative controls with HR = 1 within 95% CI
+  - Post-calibration: Estimate and correct for systematic bias; derive calibrated effect estimates
 
 # Sample Size and Study Power {#sample-size}
 
+This is a retrospective cohort study using existing electronic health records. Sample sizes are determined by available data rather than pre-specified power calculations.
+
+Available sample sizes prior to matching:
+
+| Group | N |
+|-------|---|
+| Metal biliary stent (Target) | 1,273 |
+| Plastic biliary stent (Comparator) | 870 |
+
+Power calculations will be conducted based on observed event rates for each outcome. Adequate power is anticipated for the primary outcomes (acute cholangitis and re-intervention) given expected event rates. Statistical power for all-cause mortality analyses may be limited due to the overall poor prognosis of pancreatic cancer.
+
 # Strengths and Limitations {#strengths-limitations}
+
+## Strengths
+
+1. **Real-world data:** Reflects actual clinical populations including patients excluded from RCTs due to strict eligibility criteria
+2. **Large-scale propensity score matching:** Hundreds of covariates used for robust confounding control
+3. **Empirical calibration:** Quantitative assessment and correction of residual confounding and systematic bias using negative control outcomes
+4. **OHDSI standard methodology:** Reproducible and transparent analytical framework
+5. **Multiple follow-up windows:** Evaluation at 30, 90, 180, and 365 days covers diverse clinically relevant timepoints
+
+## Limitations
+
+1. **Observational study limitations:** Absence of randomization means unmeasured confounding cannot be fully excluded
+2. **Single database:** Generalizability of results may be limited
 
 # Protection of Human Subjects
 
+The study is using only de-identified data. Confidentiality of patient records will be maintained at all times. All study reports will contain aggregate data only and will not identify individual patients or physicians.
+
 # Management and Reporting of Adverse Events and Adverse Reactions
 
+This is a non-interventional, retrospective observational study using existing electronic health records. No investigational products are administered and no direct patient interventions are performed. Accordingly, formal adverse event monitoring and reporting procedures applicable to interventional studies are not required. Any incidental findings of clinical significance identified during data analysis will be handled in accordance with applicable institutional policies.
+
 # Plans for Disseminating and Communicating Study Results
+The study results will be posted on the OHDSI website after completion of the study. At least one paper describing the study and its results will be written and submitted for publication to a peer-reviewed scientific journal.
 
 \clearpage
 
 # References {-}
+
+1. Almadi MA, Barkun A, Martel M. No benefit of covered vs uncovered self-expandable metal stents in patients with malignant distal biliary obstruction: a meta-analysis. *Clin Gastroenterol Hepatol.* 2013;11(1):27-37.
+2. Dumonceau JM, et al. Endoscopic biliary stenting: indications, choice of stents, and results. *Endoscopy.* 2018;50(9):910-930.
+3. Kiriyama S, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. *J Hepatobiliary Pancreat Sci.* 2018;25(1):17-30.
+4. Schuemie MJ, et al. Empirical confidence interval calibration for population-level effect estimation studies in observational healthcare data. *Proc Natl Acad Sci U S A.* 2018;115(11):2571-2577.
+5. Suissa S. Immortal time bias in pharmaco-epidemiology. *Am J Epidemiol.* 2008;167(4):492-499.
+6. OHDSI CohortMethod package. https://ohdsi.github.io/CohortMethod/
 
 <div id="refs"></div>
 
@@ -232,3 +419,133 @@ printCohortDefinitionFromNameAndJson(name = "Template Cohort (New-users of DDP4 
 # Outcome Cohort Definitions
 
 # Negative Control Concepts {#negative-controls}
+
+Negative control outcomes are conditions or events with no plausible biological association with either metal or plastic biliary stent exposure. These are used for empirical calibration of systematic error.
+
+| Concept ID | Concept Name |
+|------------|-------------|
+| 4218106 | Alcoholism |
+| 440424 | Aphasia |
+| 378424 | Astigmatism |
+| 261880 | Atelectasis |
+| 80509 | Bone cyst |
+| 434626 | Borderline personality disorder |
+| 438407 | Bulimia nervosa |
+| 134765 | Cachexia |
+| 4172458 | Candidiasis of skin |
+| 381581 | Chalazion |
+| 4047787 | Colles' fracture |
+| 198075 | Condyloma acuminatum of the anogenital region |
+| 133228 | Dental caries |
+| 433440 | Dysthymia |
+| 376132 | Ectropion |
+| 74855 | Genital herpes simplex |
+| 195212 | Hypercortisolism |
+| 140362 | Hypoparathyroidism |
+| 4288544 | Inguinal hernia |
+| 439840 | Lymphangitis |
+| 436100 | Narcolepsy |
+| 4215978 | Onychomycosis |
+| 4171915 | Orchitis |
+| 380731 | Otitis externa |
+| 192606 | Paraplegia |
+| 253796 | Pneumothorax |
+| 4153877 | Post-traumatic wound infection |
+| 373478 | Presbyopia |
+| 194997 | Prostatitis |
+| 380395 | Retinal dystrophy |
+| 4339088 | Testicular mass |
+| 440814 | Torticollis |
+| 4028970 | Tracheobronchitis |
+| 4114197 | Tumor of hypothalamus |
+| 4092565 | Uterine prolapse |
+| 197036 | Vesicoureteric reflux |
+| 4223947 | Viral hepatitis, type A |
+| 261326 | Viral pneumonia |
+| 435613 | Cellulitis |
+| 4049417 | Vesicular eczema |
+| 436675 | Anorexia nervosa |
+| 432590 | Delusional disorder |
+| 194696 | Dysmenorrhea |
+| 4135082 | Dislocation of distal radioulnar joint |
+| 4001458 | Fatigue fracture of vertebra |
+| 440129 | Hypertrophy of nasal turbinates |
+| 380839 | Tuberous sclerosis syndrome |
+| 134619 | Toxic nodular goiter |
+| 377535 | Sleep walking disorder |
+| 4239381 | Psychoactive substance abuse |
+| 40443308 | Polycystic ovary syndrome |
+| 376938 | Neurofibromatosis syndrome |
+| 4304008 | Memory impairment |
+| 374655 | Mastoiditis |
+| 72418 | Scoliosis deformity of spine |
+| 4142905 | Fracture of rib |
+| 435093 | Closed fracture of femur |
+| 42873169 | Sprain of shoulder rotator cuff |
+| 316457 | Mallory-Weiss syndrome |
+| 436676 | Posttraumatic stress disorder |
+| 30234 | Neck sprain |
+| 74189 | Sprain of cruciate ligament of knee |
+| 139902 | Allergic urticaria |
+| 376707 | Acute conjunctivitis |
+| 437082 | Ankylosing spondylitis |
+| 198803 | Benign prostatic hyperplasia |
+| 377910 | Deviated nasal septum |
+| 134453 | Bursitis |
+| 138463 | Aphthous ulcer of mouth |
+| 199861 | Perianal abscess |
+| 4079750 | Osteoarthritis of knee |
+| 4150372 | Acute otitis media |
+| 141323 | Acute maxillary sinusitis |
+| 433527 | Endometriosis (clinical) |
+| 140168 | Psoriasis |
+| 318800 | Gastroesophageal reflux disease |
+| 81878 | Benign paroxysmal positional vertigo |
+| 198202 | Cystocele |
+| 374366 | Sensorineural hearing loss |
+| 380094 | Carpal tunnel syndrome |
+| 77965 | Acquired trigger finger |
+| 72576 | Benign tumor of breast |
+| 4207307 | Infective meningitis |
+| 201792 | Nongonococcal urethritis |
+| 4131595 | Fracture of radius |
+| 4299544 | Acanthosis nigricans |
+| 30441 | Sialolithiasis |
+| 73300 | Radial styloid tenosynovitis |
+| 135215 | Hashimoto thyroiditis |
+| 4068482 | Prolapsed lumbar intervertebral disc |
+| 433450 | Paranoid schizophrenia |
+| 141933 | Alopecia areata |
+| 381444 | Contusion of eye |
+| 437116 | Closed fracture of distal end of radius |
+| 4140300 | Compression fracture of lumbar spine |
+| 4002998 | Fracture of crown of tooth, enamel and dentin, without pulp exposure |
+| 4129394 | Fracture of lumbar spine |
+| 4320022 | Fracture of orbit |
+| 4134318 | Fractured nasal bones |
+| 4069306 | Idiopathic osteoporosis with pathological fracture |
+| 4069524 | Osteoporotic fracture of lumbar vertebra |
+| 4133612 | Tooth crown fracture |
+| 434500 | Closed fracture of neck of femur |
+| 78272 | Sprain of wrist |
+| 132466 | Lumbar sprain |
+| 81151 | Sprain of ankle |
+| 4133015 | Sprain of anterior cruciate ligament of knee |
+| 40620346 | Sprain of neck |
+| 74194 | Sprain of spinal ligament |
+| 73649 | Contusion of finger |
+| 4167102 | Laceration of finger |
+| 436077 | Developmental delay |
+| 4031019 | Allergic contact dermatitis |
+| 134438 | Contact dermatitis |
+| 133834 | Atopic dermatitis |
+| 137053 | Seborrheic dermatitis |
+| 4169287 | Itching of skin |
+| 4300441 | Burn scar |
+| 36713492 | Non-erosive gastro-esophageal reflux disease |
+| 377558 | Irregular astigmatism |
+| 380706 | Regular astigmatism |
+| 75860 | Constipation |
+| 132706 | Disorder of nail |
+| 139099 | Ingrowing nail |
+| 439776 | Autism spectrum disorder |
