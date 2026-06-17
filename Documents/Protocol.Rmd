@@ -49,8 +49,8 @@ longtable: yes
 mainfont: Arial
 bibliography: Protocol.bib
 params:
-  date: '28-Mar-2025'
-  version: 0.0.1
+  date: '15-June-2026'
+  version: 0.0.2
 subtitle: 'Version: `r params$version`'
 link-citations: yes
 csl: bmj.csl
@@ -78,8 +78,13 @@ latex_table_font_size <- 8
 # List of Abbreviations
 
 ```{r abbreviations, echo=FALSE}
-abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
+abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, show_col_types = FALSE, file = "
   CDM; Common data model
+  OHDSI; Observational Health Data Sciences and Informatics
+  IRB; Institutional review board
+  OMOP; Observational Medical Outcomes Partnership
+  MS; Metal Biliary Stent
+  PS; Plastic Biliary Stent
 ")
 
 tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
@@ -99,9 +104,11 @@ if (knitr::is_latex_output()) {
 ## Investigators
 
 ```{r parties, echo=FALSE}
-parties <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+parties <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, show_col_types = FALSE,  file = "
   Investigator; Institution/Affiliation
-  Joe Bruin *; Department of Biostatistics, University of California, Los Angeles, Los Angeles, CA, USA
+  Yiju Park; Department of Biomedical Systems Informatics, Yonsei University College of Medicine, Seoul, Korea
+  Hee Seung Lee; Yonsei Institute for Digital Health, Yonsei University, Seoul, Korea
+  Seng Chan You*; Department of Biomedical Systems Informatics, Yonsei University College of Medicine, Seoul, Korea
 ")
 
 tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
@@ -120,54 +127,39 @@ if (knitr::is_latex_output()) {
 ## Disclosures
 
 This study is undertaken within Observational Health Data Sciences and Informatics (OHDSI), an open collaboration.
-**JB** is a fictional character.
 
 \clearpage
 
 # Abstract
 
-**Background and Significance**: 
+**Background and Significance**: Pancreatic cancer-related biliary obstruction is managed with biliary stent placement via ERCP. Current guidelines recommend metal biliary stents (MS) over plastic biliary stents (PS) for inoperable malignant obstruction; however, real-world comparative evidence on safety and effectiveness remains limited.
 
-**Study Aims**: 
+**Study Aims**: To compare the clinical safety and effectiveness of metal versus plastic biliary stents in patients with pancreatic cancer using real-world observational data from the OMOP Common Data Model.
 
-**Study Description**: 
+**Study Description**:
 
-* **Population**: 
+* **Population**: Adult patients (age ≥ 18) with a prior diagnosis of pancreatic cancer who received their first biliary stent insertion, excluding those with a history of cholangiocarcinoma.
 
-* **Comparators**:
-  
-* **Outcomes**:
-  
-* **Design**: 
+* **Comparators**: Target — Metal Biliary Stent (ATLAS Cohort ID: 688); Comparator — Plastic Biliary Stent (ATLAS Cohort ID: 689).
 
-* **Timeframe**: 
+* **Outcomes**: Acute cholangitis (Tokyo Guideline 2018, Cohort ID: 697); Moderate acute cholangitis (Cohort ID: 719); Cholangitis broad definition (Cohort ID: 663); All-cause mortality (Cohort ID: 665); Biliary re-intervention.
+
+* **Design**: New-user active comparator cohort study using 1:1 propensity score matching with large-scale covariates (LASSO logistic regression) and empirical calibration via negative control outcomes.
+
+* **Timeframe**: Follow-up windows of 30, 90, 180, and 365 days from the index date (first stent insertion).
 
 \clearpage
 
 # Amendments and Updates
 
 ```{r amendments, echo=FALSE}
-amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE,  show_col_types = FALSE,  file = "
   Number; Date; Section of study protocol; Amendment or update; Reason
+  1; 2025-03-18; v0.01; ; Initial draft
+  2; 2026-06-15; v0.02; update;
 ")
 
 tab <- kable(amendments, booktabs = TRUE, linesep = "")
-
-if (knitr::is_latex_output()) {
-  tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
-} else {
-  tab %>% kable_styling(bootstrap_options = "striped")
-}
-```
-
-# Milestones
-
-```{r dates, echo=FALSE}
-dates <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
-  Milestone; Planned / actual date
-")
-
-tab <- kable(dates, booktabs = TRUE, linesep = "")
 
 if (knitr::is_latex_output()) {
   tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
@@ -180,6 +172,7 @@ if (knitr::is_latex_output()) {
 Pancreatic cancer is an aggressive malignancy with a poor prognosis. At the time of diagnosis, the majority of patients present with biliary obstruction, which causes jaundice, pruritus, and cholangitis, significantly impairing quality of life and overall clinical status. Endoscopic retrograde cholangiopancreatography (ERCP)-guided biliary stent placement is the standard of care for palliating malignant biliary obstruction.
 
 Biliary stents are broadly classified by material into **Metal Biliary Stents (MS)** and **Plastic Biliary Stents (PS)**.
+
 | Characteristic | Metal Stent | Plastic Stent |
 |----------------|-------------|---------------|
 | Patency Duration | Long (6–12+ months) | Short (3–6 months) |
@@ -187,7 +180,7 @@ Biliary stents are broadly classified by material into **Metal Biliary Stents (M
 | Exchangeability | Difficult (self-expanding) | Easy |
 | Need for Re-intervention | Low | High |
 
-Current domestic and international guidelines (ESGE, ASGE, KSGE) recommend **metal stent use** in patients with inoperable malignant biliary obstruction, based on evidence from randomized controlled trials (RCTs) showing superior patency and lower re-intervention rates compared to plastic stents. However, whether these guideline recommendations are equally supported by real-world data remains uncertain.
+Current domestic and international guidelines (ESGE, ASGE, KSGE) recommend **metal stent use** in patients with inoperable malignant biliary obstruction, based on evidence from randomized controlled trials (RCTs) showing superior patency and lower re-intervention rates compared to plastic stents [@Dumonceau2018; @Almadi2013]. However, whether these guideline recommendations are equally supported by real-world data remains uncertain.
 
 Existing RCTs may not be representative of real-world clinical populations due to strict eligibility criteria. Real-world comparative evidence on safety (cholangitis) and effectiveness (re-intervention, survival) between the two stent types is limited. A large-scale observational study using the OHDSI Common Data Model (CDM) can validate the applicability of current guidelines in real-world settings.
 
@@ -208,7 +201,7 @@ Secondary objectives are:
 
 This study uses `CohortMethod` [@Schuemie2020-fa].
 
-This is a **observational study** based on a **new-user active comparator design** using the OHDSI CohortMethod package for population-level effect estimation (PLE).
+This is a **observational study** based on a **new-user active comparator design** using the OHDSI CohortMethod package for population-level effect estimation (PLE). The new-user design mitigates immortal time bias by requiring all patients to be naive to the study exposure at cohort entry [@Suissa2008].
 
 - **Index Date (Day 0):** Date of first biliary stent insertion (metal or plastic)
 - **Baseline Period:** 365 days prior to the index date (Day −365 to Day 0)
@@ -278,14 +271,60 @@ Only the first-ever plastic biliary stent insertion qualifies as the index event
 
 ### Acute Cholangitis Definition (Tokyo Guideline 2018)
 
-Acute cholangitis is defined as meeting **≥ 2** of the following criteria on the same date or within the same visit:
+The TG18/TG13 framework [@Kiriyama2018] defines acute cholangitis using three categories:
+
+- **Suspected diagnosis**: ≥1 item from **A** + ≥1 item from **B** or **C**
+- **Definite diagnosis**: ≥1 item from each of **A**, **B**, and **C**
+
+**Operationalization in this study:** Category C (imaging) criteria cannot be reliably ascertained from structured OMOP CDM data. Therefore, acute cholangitis in this study is operationalized as **Suspected diagnosis** using Categories A and B only (≥1 item from **A** + ≥1 item from **B**).
+
+**Category A — Systemic Inflammation**
 
 | Criterion | Threshold | OMOP Concept ID |
 |-----------|-----------|-----------------|
-| Body Temperature | > 38.0°C | 3020891 |
-| WBC (inflammation) ① | > 10,000/μL | 3000905 |
-| WBC (inflammation) ② | > 2.0 × 10⁴/μL | 3024128 |
-| Total Bilirubin (jaundice) | ≥ 1.0 mg/dL | 3010156 |
+| Fever / shaking chills | Body temperature > 38.0°C | 3020891 |
+| WBC (leukocytosis) | > 10,000/mm³ | 3000905 |
+| WBC (leukopenia) | < 4,000/mm³ | — |
+| CRP | ≥ 1 mg/dL | — |
+
+**Category B — Cholestasis**
+
+| Criterion | Threshold | OMOP Concept ID |
+|-----------|-----------|-----------------|
+| Jaundice | Total bilirubin ≥ 2.0 mg/dL | 3010156 |
+| Liver enzymes | ALP, γGTP, AST, or ALT > 1.5× upper limit of normal | — |
+
+**Category C — Imaging** *(not ascertainable from CDM; excluded from operationalization)*
+
+| Criterion | Description |
+|-----------|-------------|
+| Biliary dilatation | Dilation of intra- or extrahepatic bile ducts on imaging |
+| Evidence of etiology | Stricture, stone, stent, or other obstructing cause on imaging |
+
+#### Severity Grading (TG18)
+
+**Grade I (Mild):** Does not meet Grade II or III criteria; responds to initial medical treatment.
+
+**Grade II (Moderate):** ≥2 of the following 5 criteria:
+
+| Criterion | Threshold |
+|-----------|-----------|
+| WBC | > 12,000 or < 4,000/mm³ |
+| Fever | ≥ 39°C |
+| Age | ≥ 75 years |
+| Total bilirubin | ≥ 5 mg/dL |
+| Albumin | < 0.7 × lower limit of normal |
+
+**Grade III (Severe):** ≥1 of the following organ/system dysfunctions:
+
+| System | Criterion |
+|--------|-----------|
+| Cardiovascular | Hypotension requiring dopamine ≥ 5 μg/kg/min or any dose of norepinephrine |
+| Neurological | Disturbance of consciousness |
+| Respiratory | PaO₂/FiO₂ < 300 |
+| Renal | Oliguria or serum creatinine > 2.0 mg/dL |
+| Hepatic | PT-INR > 1.5 |
+| Hematological | Platelet count < 100,000/mm³ |
 
 ### Biliary Re-intervention
 
@@ -341,7 +380,7 @@ All analyses apply the intent-to-treat (ITT) principle.
 
 ### Empirical Calibration
 
-Negative control outcomes are used to assess and correct for residual confounding and systematic bias using the `EmpiricalCalibration` package.
+Negative control outcomes are used to assess and correct for residual confounding and systematic bias using the `EmpiricalCalibration` package [@Schuemie2018-pnas].
 
 - **Negative Controls:** Outcomes with no known biological association with either stent type (see [Negative Control Concepts](#negative-control-concepts))
 - **Calibration Procedure:**
@@ -375,6 +414,7 @@ Power calculations will be conducted based on observed event rates for each outc
 
 1. **Observational study limitations:** Absence of randomization means unmeasured confounding cannot be fully excluded
 2. **Single database:** Generalizability of results may be limited
+3. **Outcome misclassification — acute cholangitis:** The TG18 definite diagnosis requires imaging evidence of biliary obstruction or dilatation (Category C); however, structured imaging findings are not reliably captured in the OMOP CDM. Consequently, acute cholangitis is operationalized using a **suspected diagnosis** criterion (Categories A + B only), which may result in outcome misclassification. Cases meeting only laboratory criteria without imaging confirmation may represent other etiologies, potentially inflating the observed incidence of cholangitis.
 
 # Protection of Human Subjects
 
@@ -391,13 +431,6 @@ The study results will be posted on the OHDSI website after completion of the st
 
 # References {-}
 
-1. Almadi MA, Barkun A, Martel M. No benefit of covered vs uncovered self-expandable metal stents in patients with malignant distal biliary obstruction: a meta-analysis. *Clin Gastroenterol Hepatol.* 2013;11(1):27-37.
-2. Dumonceau JM, et al. Endoscopic biliary stenting: indications, choice of stents, and results. *Endoscopy.* 2018;50(9):910-930.
-3. Kiriyama S, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. *J Hepatobiliary Pancreat Sci.* 2018;25(1):17-30.
-4. Schuemie MJ, et al. Empirical confidence interval calibration for population-level effect estimation studies in observational healthcare data. *Proc Natl Acad Sci U S A.* 2018;115(11):2571-2577.
-5. Suissa S. Immortal time bias in pharmaco-epidemiology. *Am J Epidemiol.* 2008;167(4):492-499.
-6. OHDSI CohortMethod package. https://ohdsi.github.io/CohortMethod/
-
 <div id="refs"></div>
 
 \clearpage
@@ -408,17 +441,61 @@ The study results will be posted on the OHDSI website after completion of the st
 
 # Exposure Cohort Definitions
 
-```{r appendix,  echo=FALSE, results="asis", warning=FALSE, message=FALSE}
-source("https://raw.githubusercontent.com/ohdsi-studies/LegendT2dm/master/R/PrettyOutput.R")
+```{r exposure-cohorts, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+source("../R/PrettyOutput.R")
 
-printCohortDefinitionFromNameAndJson(name = "Template Cohort (New-users of DDP4 inhibitors)",
-                                     json = SqlRender::readSql("templateCohort.json"),
-                                     withConcepts = TRUE)
+printCohortDefinitionFromNameAndJson(
+  name = "Metal Biliary Stent with Pancreatic Cancer (Target, ATLAS ID: 688)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_Metal_stent_with_Pancreatic_cancer.json"),
+  withConcepts = TRUE
+)
+
+printCohortDefinitionFromNameAndJson(
+  name = "Plastic Biliary Stent with Pancreatic Cancer (Comparator, ATLAS ID: 689)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_Plastic_stent_with_Pancreatic_cancer.json"),
+  withConcepts = TRUE
+)
 ```
 
 # Outcome Cohort Definitions
 
-# Negative Control Concepts {#negative-controls}
+```{r outcome-cohorts, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+source("../R/PrettyOutput.R")
+
+printCohortDefinitionFromNameAndJson(
+  name = "Acute Cholangitis (Tokyo Guideline 2018, ATLAS Cohort ID: 697)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_BS_Acute_Cholangitis_TK_guideline.json"),
+  withConcepts = TRUE
+)
+
+printCohortDefinitionFromNameAndJson(
+  name = "Moderate Acute Cholangitis (Tokyo Guideline 2018, ATLAS Cohort ID: 719)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_BS_Moderate_Acute_Cholangitis_TK_guideline.json"),
+  withConcepts = TRUE
+)
+
+printCohortDefinitionFromNameAndJson(
+  name = "Cholangitis - Broad Definition (ATLAS Cohort ID: 663)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_BS_Cholangitis.json"),
+  withConcepts = TRUE
+)
+
+printCohortDefinitionFromNameAndJson(
+  name = "All-cause Mortality (ATLAS Cohort ID: 665)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_BS_allcause_death.json"),
+  withConcepts = TRUE
+)
+```
+
+## Biliary Re-intervention
+
+**Definition:** A biliary re-intervention event is defined as any procedure code indicating biliary stent replacement, reinsertion, or repair occurring after Day 7 from the index date (first stent insertion).
+
+**Identification:** Biliary re-intervention is identified using the same concept sets as the exposure cohorts (metal or plastic biliary stent device exposure codes). An event is counted as a re-intervention if it occurs more than 7 days after the index date, regardless of the stent type used at re-intervention.
+
+**Rationale for Day 7 washout:** Events within the first 7 days post-index are excluded to avoid misclassifying planned staged procedures or early technical corrections as re-interventions.
+
+# Negative Control Concepts {#negative-control-concepts}
 
 Negative control outcomes are conditions or events with no plausible biological association with either metal or plastic biliary stent exposure. These are used for empirical calibration of systematic error.
 
