@@ -1,4 +1,19 @@
-BS260205
+Metal Biliary Stent versus Plastic Biliary Stent in Patients with Pancreatic Cancer
+=============
+
+<img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
+
+- Analytics use case(s): Population-Level Estimation
+- Study type: Clinial Application
+- Tags: **-**
+- Study lead: Yiju Park, Seng Chan You
+- Study lead forums tag: **[YijuPark](https://forums.ohdsi.org/u/yiju_park/summary)**
+- Study start date: 2025
+- Study end date: **-**
+- Protocol: **-**
+- Publications: **-**
+- Results explorer: **-**
+
 ==============================
 
 
