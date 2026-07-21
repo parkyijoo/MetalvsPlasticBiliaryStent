@@ -1,6 +1,6 @@
 # Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of BS260205
+# This file is part of BiliaryStent
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 #' Execute the Study
 #'
 #' @details
-#' This function executes the BS260205 Study.
+#' This function executes the BiliaryStent Study.
 #' 
 #' The \code{createCohorts}, \code{synthesizePositiveControls}, \code{runAnalyses}, and \code{runDiagnostics} arguments
 #' are intended to be used to run parts of the full study at a time, but none of the parts are considered to be optional.
@@ -82,6 +82,7 @@ execute <- function(connectionDetails,
                     createCohorts = TRUE,
                     synthesizePositiveControls = TRUE,
                     runAnalyses = TRUE,
+                    runDiagnostics = TRUE,
                     packageResults = TRUE,
                     maxCores = 4,
                     minCellCount= 5) {
@@ -127,6 +128,12 @@ execute <- function(connectionDetails,
                     oracleTempSchema = oracleTempSchema,
                     outputFolder = outputFolder,
                     maxCores = maxCores)
+  }
+  
+  if (runDiagnostics) {
+    ParallelLogger::logInfo("Running diagnostics") # add
+    generateDiagnostics(outputFolder = outputFolder,
+                        maxCores = maxCores)
   }
   
   if (packageResults) {

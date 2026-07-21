@@ -17,14 +17,12 @@ targetId,comparatorId,outcomeId,outcomeName,type
 688,689,74855,Genital herpes simplex,outcome
 688,689,195212,Hypercortisolism,outcome
 688,689,140362,Hypoparathyroidism,outcome
-688,689,4288544,Inguinal hernia,outcome
 688,689,439840,Lymphangitis,outcome
 688,689,436100,Narcolepsy,outcome
 688,689,4215978,Onychomycosis,outcome
 688,689,4171915,Orchitis,outcome
 688,689,380731,Otitis externa,outcome
 688,689,192606,Paraplegia,outcome
-688,689,253796,Pneumothorax,outcome
 688,689,4153877,Post-traumatic wound infection,outcome
 688,689,373478,Presbyopia,outcome
 688,689,194997,Prostatitis,outcome
@@ -35,8 +33,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 688,689,4114197,Tumor of hypothalamus,outcome
 688,689,4092565,Uterine prolapse,outcome
 688,689,197036,Vesicoureteric reflux,outcome
-688,689,4223947,"Viral hepatitis, type A",outcome
-688,689,261326,Viral pneumonia,outcome
 688,689,435613,Cellulitis,outcome
 688,689,4049417,Vesicular eczema,outcome
 688,689,436675,Anorexia nervosa,outcome
@@ -74,7 +70,6 @@ targetId,comparatorId,outcomeId,outcomeName,type
 688,689,141323,Acute maxillary sinusitis,outcome
 688,689,433527,Endometriosis (clinical),outcome
 688,689,140168,Psoriasis,outcome
-688,689,318800,Gastroesophageal reflux disease,outcome
 688,689,81878,Benign paroxysmal positional vertigo,outcome
 688,689,198202,Cystocele,outcome
 688,689,374366,Sensorineural hearing loss,outcome
@@ -122,7 +117,10 @@ targetId,comparatorId,outcomeId,outcomeName,type
 688,689,36713492,Non-erosive gastro-esophageal reflux disease,outcome
 688,689,377558,Irregular astigmatism,outcome
 688,689,380706,Regular astigmatism,outcome
-688,689,75860,Constipation,outcome
 688,689,132706,Disorder of nail,outcome
 688,689,139099,Ingrowing nail,outcome
 688,689,439776,Autism spectrum disorder,outcome
+688,689,74124,Traumatic arthropathy,outcome
+688,689,4298596,Post-traumatic scar,outcome
+688,689,436676,Posttraumatic stress disorder,outcome
+688,689,4028970,Tracheobronchitis,outcome

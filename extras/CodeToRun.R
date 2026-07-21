@@ -1,4 +1,4 @@
-library(BS260205)
+library(BiliaryStent)
 
 # Optional: specify where the temporary files (used by the Andromeda package) will be created:
 options(andromedaTempFolder = "s:/andromedaTemp")

@@ -1,19 +1,4 @@
-Metal Biliary Stent versus Plastic Biliary Stent in Patients with Pancreatic Cancer
-=============
-
-<img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
-
-- Analytics use case(s): Population-Level Estimation
-- Study type: Clinial Application
-- Tags: **-**
-- Study lead: Yiju Park, Seng Chan You
-- Study lead forums tag: **[YijuPark](https://forums.ohdsi.org/u/yiju_park/summary)**
-- Study start date: 2025
-- Study end date: **-**
-- Protocol: **-**
-- Publications: **-**
-- Results explorer: **-**
-
+BiliaryStent
 ==============================
 
 
@@ -41,7 +26,7 @@ How to run
 3. Once installed, you can execute the study by modifying and using the code below. For your convenience, this code is also provided under `extras/CodeToRun.R`:
 
 	```r
-	library(BS260205)
+	library(BiliaryStent)
 	
   # Optional: specify where the temporary files (used by the Andromeda package) will be created:
   options(andromedaTempFolder = "c:/andromedaTemp")
@@ -53,7 +38,7 @@ How to run
 	minCellCount <- 5
 	
 	# The folder where the study intermediate and result files will be written:
-	outputFolder <- "c:/BS260205"
+	outputFolder <- "c:/BiliaryStent"
 	
 	# Details for connecting to the server:
 	# See ?DatabaseConnector::createConnectionDetails for help
@@ -112,11 +97,11 @@ How to run
 
 License
 =======
-The BS260205 package is licensed under Apache License 2.0
+The BiliaryStent package is licensed under Apache License 2.0
 
 Development
 ===========
-BS260205 was developed in ATLAS and R Studio.
+BiliaryStent was developed in ATLAS and R Studio.
 
 ### Development status
 

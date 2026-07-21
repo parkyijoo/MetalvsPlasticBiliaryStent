@@ -1,0 +1,1834 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45764662,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "701398005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Bare metal biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Physical Object",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45771175,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "701406003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Polymeric biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Physical Object",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37164911,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1236977004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Plastic biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Physical Object",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42087127,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202031",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ADVANIX BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088098,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212024",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ARISTENT BILIARY CC",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088099,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212124",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ARISTENT BILIARY CP",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088100,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212024",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ARISTENT BILIARY NC",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693583,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212006",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "AURORA SELF-EXPANDING BILIARY STENT SYSTEM",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693572,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202098",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693575,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202198",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088559,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202105",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103700,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212619",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "Biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693580,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212001",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT ULTRAFLEX DIAMOND",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693568,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202002",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT, COTTON-HUIBREGTSE",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693569,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202012",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT, COTTON-LEUNG",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693581,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212002",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY ZA-STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693585,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212023",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BONASTENT FOR BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088879,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212123",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BONASTENT FOR BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088880,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212223",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BONASTENT FOR BILIARY COVERED",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088881,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212023",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BONASTENT FOR BILIARY WITH RETRIEVAL LASSO",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42089079,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202021",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "C-FLEX PIGTAIL BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090177,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212519",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COMVI BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693803,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212819",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COMVI BILIARY STENT[COMVI Ⅱ]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693584,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212013",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "CORDIS SMART NITINOL STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693571,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202082",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-HUIBREGTSE BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693574,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202182",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-HUIBREGTSE BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090449,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202282",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-LEUNG BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090450,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202382",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-LEUNG BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693576,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202682",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-LEUNG SOF-FLEX BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090456,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212004",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COVERED BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693809,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212924",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COVERED BILIARY WITH LASSO",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090460,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212005",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COVERED LASSO BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091505,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212490",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS BILIARY CONTRA-LATERAL LIMB STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091506,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212590",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS BILIARY KEY-MB STENT, EGIS USAB STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091507,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212390",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS BILIARY M-VALVE STENT, EGIS BILIARY WIDE STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091512,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212090",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS DB BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091513,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212190",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS DC BILIARY STENT , EGIS BILIARY PARTIAL DC 20 STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091518,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212790",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS FLOWER BILIARY BARE STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091519,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212363",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS FLOWER BILIARY FULL COVER STENT, EGIS BILIARY FULLY COVERED STENT, EGIS BILIARY FLARED FULLY COVERED STENT, EGIS BILIARY FLARED FULLY COVERED VALVE STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091520,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212690",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS FLOWER BILIARY PARTIAL COVER STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091525,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212163",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS SB BILIARY STENT, EGIS BILIARY MOVING STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091526,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212263",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EGIS SC BILIARY STENT, EGIS K-PAPILLA STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693586,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212027",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ENDOCOIL BILIARY ENDOPROSTHESIS",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42091808,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212061",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "EPIC NITINOL BILIARY STENT SYSTEM",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 42092740,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202011",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "FLEXIMA BILIARY STENT SYSTEM",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693588,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212082",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "FUSION ZILVER BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42092969,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212037",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "GATE BILIARY COVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42092970,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8233037",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "GATE BILIARY UNCOVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42093668,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212004",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "HANARO BILIARY SPIRAL STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42093888,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212063",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "HERCULES DH BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42093962,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212050",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "HILZO BILIARY COVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42093963,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212150",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "HILZO BILIARY UNCOVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693582,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212003",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "JOSTENT SELFX(XF)",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42095452,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212068",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "LUMINEXX3 BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097310,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212196",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NEXENT BILIARY COVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097311,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212096",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NEXENT BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097312,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212196",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NEXENT BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097374,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212119",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693802,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212719",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT [FLARE TYPE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693805,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212920",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[BOTH FLARE SONG SUTURE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693804,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212919",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[BUMPY SONG SUTURE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693806,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212921",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[BUMPY STRING]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097375,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212419",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[BUMPY]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693807,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212922",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[FULL COVERED SONG SUTURE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693808,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212923",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[HEAD TYPE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097376,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212120",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[KAFFES]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693590,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212791",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[PD TYPE SONG SUTURE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693797,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212019",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY COVERED STENT[TWO-IN-ONE]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097377,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212319",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY PTFE COVERED STENT(COMVI)",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097378,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212019",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097380,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212219",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NITI-S BILIARY UNCOVERED STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42097422,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212104",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NON COVERED BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693798,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212104",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "NON COVERED LASSO BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693772,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8202004",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "OPTIMOS BILIARY PLASTIC STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693800,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212204",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "PARTIAL COVERED BILIARY",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42098363,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202001",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "PERCUFLEX AMSTERDAM BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42099016,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212073",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "PROTEGE GPS SELF-EXPENDING NITINOL STENT BILIARY SYSTEM(SEBX-6-20-135 RX TYPE)",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42099017,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212173",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "PROTEGE GPS SELF-EXPENDING NITINOL STENT BILIARY SYSTEM(SERB 65-06-20-80 OTW TYPE)",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 19693573,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202101",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "QUICK PLACE V",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693587,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212040",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "RX HERCULINK PLUS BILIARY STENT SYSTEM",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42100041,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212021",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "SENTINOL NITINOL BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 42100653,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5203182",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "SOLUS BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42100793,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212028",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "SR SONG RETRIEVABLE BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693577,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5203002",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ST-2 SOEHENDRA TANNENBAUM BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42100842,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5203082",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ST-2 SOEHENDRA TANNENBAUM BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693801,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212208",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "TARGETSECURE BILIARY STENT[COVERED]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693799,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212108",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "TARGETSECURE BILIARY STENT[NON-COVERED, LASSO]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693796,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J8212008",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "TARGETSECURE BILIARY STENT[NON-COVERED]",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103169,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212011",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "WALL STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103171,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212031",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "WALLFLEX BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103172,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212041",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "WALLFLEX BILIARY STENT (UNCOVERED)",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 42103177,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212064",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "WALLSTENT ENDOPROSTHESIS WITH THE UNISTEP PLUS",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103458,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212202",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZILVER 635 BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693589,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212102",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZILVER BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103459,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5212051",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZILVER BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103466,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202482",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZIMMON BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103467,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202582",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZIMMON BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 19693570,
+            "STANDARD_CONCEPT": "",
+            "CONCEPT_CODE": "J5202022",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZIMMON BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4234567,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "360123005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Physical Object",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[yiju] total biliary stent",
+      "id": 2
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4238341,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "58094005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Removal of prosthesis of bile duct",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4280567,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "366741003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Repair of bile duct",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[yiju] reintervention procedure",
+      "id": 3
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [{
+    "expression": {
+      "CriteriaList": [{
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": null,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 7,
+            "Coeff": -1
+          },
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": false,
+        "EndWindow": null,
+        "Criteria": {"DeviceExposure": {
+          "OccurrenceEndDate": null,
+          "DeviceTypeExclude": false,
+          "CorrelatedCriteria": null,
+          "CodesetId": 2,
+          "Quantity": null,
+          "UniqueDeviceId": null,
+          "ProviderSpecialty": null,
+          "DeviceSourceConcept": null,
+          "Gender": null,
+          "DeviceType": null,
+          "VisitType": null,
+          "First": null,
+          "OccurrenceStartDate": null,
+          "Age": null
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "CountColumn": null,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      }],
+      "Type": "ALL",
+      "DemographicCriteriaList": [],
+      "Groups": [],
+      "Count": null
+    },
+    "name": "prior device exposure",
+    "description": null
+  }],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {"DeviceExposure": {
+        "OccurrenceEndDate": null,
+        "DeviceTypeExclude": false,
+        "CorrelatedCriteria": null,
+        "CodesetId": 2,
+        "Quantity": null,
+        "UniqueDeviceId": null,
+        "ProviderSpecialty": null,
+        "DeviceSourceConcept": null,
+        "Gender": null,
+        "DeviceType": null,
+        "VisitType": null,
+        "First": null,
+        "OccurrenceStartDate": null,
+        "Age": null
+      }},
+      {"ProcedureOccurrence": {
+        "ProcedureType": null,
+        "CorrelatedCriteria": null,
+        "CodesetId": 3,
+        "ProcedureSourceConcept": null,
+        "Quantity": null,
+        "ProviderSpecialty": null,
+        "Gender": null,
+        "ProcedureTypeExclude": false,
+        "VisitType": null,
+        "First": null,
+        "OccurrenceStartDate": null,
+        "Modifier": null,
+        "Age": null
+      }}
+    ],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

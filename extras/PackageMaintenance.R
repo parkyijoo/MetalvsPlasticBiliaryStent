@@ -1,6 +1,6 @@
 # Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of BS260205
+# This file is part of BiliaryStent
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("BS260205")
+OhdsiRTools::checkUsagePackage("BiliaryStent")
 OhdsiRTools::updateCopyrightYearFolder()
 devtools::spell_check()
 
@@ -43,7 +43,7 @@ ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "CohortsToCreate.csv
                                                  insertTableSql = TRUE,
                                                  insertCohortCreationR = TRUE,
                                                  generateStats = FALSE,
-                                                 packageName = "BS260205")
+                                                 packageName = "BiliaryStent")
 
 # Create analysis details -------------------------------------------------
 source("extras/CreateStudyAnalysisDetails.R")
@@ -51,4 +51,4 @@ createAnalysesDetails("inst/settings/")
 createPositiveControlSynthesisArgs("inst/settings/")
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::createRenvLockFile("BS260205")
+OhdsiRTools::createRenvLockFile("BiliaryStent")

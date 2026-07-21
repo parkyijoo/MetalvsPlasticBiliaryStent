@@ -5,11 +5,11 @@
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "BS260205"
+		"find": "BiliaryStent"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "BS260205"
+		"find": "BiliaryStent"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",
