@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.17)  18 JUN 2026 10:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.21)  27 JUL 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Protocol.tex
 (./Protocol.tex
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-05-26>
+L3 programming layer <2026-06-18>
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
@@ -97,7 +97,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-05-26 L3 programming layer (loader) 
+Package: expl3 2026-06-18 L3 programming layer (loader) 
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2026-02-18 L3 backend support: XeTeX
 \g__graphics_track_int=\count293
@@ -933,7 +933,7 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@count@id=\count373
 \enitdp@description=\count374
 ) (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ) (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -969,13 +969,13 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 \Hy@linkcounter=\count376
 \Hy@pagecounter=\count377
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count378
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4070.
 Package hyperref Info: Hyper figures OFF on input line 4199.
@@ -1013,7 +1013,7 @@ Package hyperref Info: PDF/A mode OFF on input line 6121.
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/yijoo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2026-04-24 v7.01q Hyperref driver for XeTeX
+File: hxetex.def 2026-06-17 v7.01r Hyperref driver for XeTeX
 \pdfm@box=\box90
 \c@Hy@AnnotLevel=\count384
 \HyField@AnnotCount=\count385
@@ -1052,34 +1052,34 @@ File: bkm-xetex.def 2026-05-21 v1.32 bookmark driver for xetex (HO)
 )) (./Protocol.aux)
 \openout1 = `Protocol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 149.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 151.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 149.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 151.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 149.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 151.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 149.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 151.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.203140258383906.
@@ -1107,7 +1107,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.203140258383906]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 14.43768pt on input line 149.
+(Font)              scaled to size 14.43768pt on input line 151.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.203140258383906.
@@ -1143,15 +1143,15 @@ Package fontspec Info:
 (fontspec)             <->s*[1.203140258383906]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.43768pt on input line 149.
+(Font)              scaled to size 14.43768pt on input line 151.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 149.
+(Font)              `operators' in the math version `normal' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 149.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 151.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 149.
+(Font)              `operators' in the math version `bold' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 149.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 151.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.203140258383906.
@@ -1217,13 +1217,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.203260572409744]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 149.
+(Font)              `symbols' in the math version `normal' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 149.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 151.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 149.
+(Font)              `symbols' in the math version `bold' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 149.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 151.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.203140258383906.
@@ -1283,13 +1283,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.203019944358068]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 149.
+(Font)              `largesymbols' in the math version `normal' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 149.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 151.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 149.
+(Font)              `largesymbols' in the math version `bold' on input line 151.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 149.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 151.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1328,15 +1328,15 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 149.
+Package hyperref Info: Link coloring OFF on input line 151.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 151.
+(Font)              scaled to size 20.74pt on input line 153.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 151.
+(Font)              scaled to size 14.4pt on input line 153.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 156.
+(Font)              scaled to size 17.28pt on input line 158.
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 156.
+(Font)              scaled to size 17.28pt on input line 158.
 (./Protocol.toc
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1384,19 +1384,19 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 \openout4 = `Protocol.toc'.
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 161.
+(Font)              scaled to size 8.0pt on input line 163.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.62512pt on input line 163.
+(Font)              scaled to size 9.62512pt on input line 165.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0157pt on input line 163.
+(Font)              scaled to size 6.0157pt on input line 165.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.6261pt on input line 163.
+(Font)              scaled to size 9.6261pt on input line 165.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.01631pt on input line 163.
+(Font)              scaled to size 6.01631pt on input line 165.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.62415pt on input line 163.
+(Font)              scaled to size 9.62415pt on input line 165.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.01509pt on input line 163.
+(Font)              scaled to size 6.01509pt on input line 165.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1421,7 +1421,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [3]
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 180.
+(Font)              scaled to size 14.4pt on input line 182.
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1489,9 +1489,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [9]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 468.
-Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+(Font)              scaled to size 12.0pt on input line 483.
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1502,7 +1500,10 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [10]
-Overfull \hbox (17.70146pt too wide) in paragraph at lines 538--539
+Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (17.70146pt too wide) in paragraph at lines 559--560
 \TU/Arial(0)/m/n/12 Propensity scores are estimated using large-scale covariate sets from the \TU/lmtt/m/n/12 FeatureExtraction
  []
 
@@ -1546,17 +1547,37 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [14]
-Underfull \hbox (badness 1132) in paragraph at lines 712--712
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[15]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[16]
+Underfull \hbox (badness 1132) in paragraph at lines 757--757
 []|\TU/Arial(0)/m/n/12 Almadi MA, Barkun A, Martel M. No benefit of covered vs uncovered self-
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 712--712
+Underfull \hbox (badness 1184) in paragraph at lines 757--757
 \TU/Arial(0)/m/n/12 expandable metal stents in patients with malignant distal biliary obstruction:
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 712--712
+Underfull \hbox (badness 1424) in paragraph at lines 757--757
 \TU/Arial(0)/m/n/12 A meta-analysis. \TU/Arial(0)/m/it/12 Clinical Gastroenterology and Hepatology \TU/Arial(0)/m/n/12 2013;\TU/Arial(0)/b/n/12 11\TU/Arial(0)/m/n/12 :27–37.
  []
 
@@ -1569,16 +1590,11 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
-[15
+[17
 
 ]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 734.
-
-Overfull \hbox (28.48717pt too wide) in alignment at lines 783--844
- [] [] [] [] [] [] [] 
- []
-
+(Font)              scaled to size 24.88pt on input line 779.
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1588,33 +1604,13 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
-[16
+[18
 
 ]
-File: OHDSI_page_header.pdf Graphic file (type pdf)
-<use OHDSI_page_header.pdf>
-
-Package fancyhdr Warning: \headheight is too small (30.0pt): 
-(fancyhdr)                Make it at least 52.09576pt, for example:
-(fancyhdr)                \setlength{\headheight}{52.09576pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
-
-[17]
-Overfull \hbox (19.58873pt too wide) in alignment at lines 851--914
+Overfull \hbox (28.48717pt too wide) in alignment at lines 833--894
  [] [] [] [] [] [] [] 
  []
 
-File: OHDSI_page_header.pdf Graphic file (type pdf)
-<use OHDSI_page_header.pdf>
-
-Package fancyhdr Warning: \headheight is too small (30.0pt): 
-(fancyhdr)                Make it at least 52.09576pt, for example:
-(fancyhdr)                \setlength{\headheight}{52.09576pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
-
-[18]
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1625,7 +1621,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [19]
-Overfull \hbox (2.3856pt too wide) in alignment at lines 921--938
+Overfull \hbox (19.58873pt too wide) in alignment at lines 901--964
  [] [] [] [] [] [] [] 
  []
 
@@ -1639,10 +1635,6 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [20]
-Overfull \hbox (28.48717pt too wide) in alignment at lines 985--1046
- [] [] [] [] [] [] [] 
- []
-
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1653,7 +1645,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [21]
-Overfull \hbox (19.58873pt too wide) in alignment at lines 1053--1116
+Overfull \hbox (2.3856pt too wide) in alignment at lines 971--988
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.3856pt too wide) in alignment at lines 995--1001
  [] [] [] [] [] [] [] 
  []
 
@@ -1667,17 +1664,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [22]
-File: OHDSI_page_header.pdf Graphic file (type pdf)
-<use OHDSI_page_header.pdf>
-
-Package fancyhdr Warning: \headheight is too small (30.0pt): 
-(fancyhdr)                Make it at least 52.09576pt, for example:
-(fancyhdr)                \setlength{\headheight}{52.09576pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
-
-[23]
-Overfull \hbox (2.3856pt too wide) in alignment at lines 1123--1140
+Overfull \hbox (28.48717pt too wide) in alignment at lines 1053--1114
  [] [] [] [] [] [] [] 
  []
 
@@ -1690,7 +1677,21 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
+[23]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
 [24]
+Overfull \hbox (19.58873pt too wide) in alignment at lines 1121--1184
+ [] [] [] [] [] [] [] 
+ []
+
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1701,6 +1702,10 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [25]
+Overfull \hbox (2.3856pt too wide) in alignment at lines 1191--1208
+ [] [] [] [] [] [] [] 
+ []
+
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1711,6 +1716,10 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [26]
+Overfull \hbox (2.3856pt too wide) in alignment at lines 1215--1221
+ [] [] [] [] [] [] [] 
+ []
+
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1761,6 +1770,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
 [31]
+Missing character: There is no 뀫 (U+B02B) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (6.83482pt too wide) in alignment at lines 1525--1629
+ [] [] [] [] [] [] [] 
+ []
+
 File: OHDSI_page_header.pdf Graphic file (type pdf)
 <use OHDSI_page_header.pdf>
 
@@ -1770,19 +1785,87 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
 
-[32] (./Protocol.aux)
+[32]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[33]
+Overfull \hbox (2.3856pt too wide) in alignment at lines 1636--1643
+ [] [] [] [] [] [] [] 
+ []
+
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[34]
+Overfull \hbox (29.08092pt too wide) in alignment at lines 1650--1658
+ [] [] [] [] [] [] [] 
+ []
+
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[35]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[36]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[37]
+File: OHDSI_page_header.pdf Graphic file (type pdf)
+<use OHDSI_page_header.pdf>
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 52.09576pt, for example:
+(fancyhdr)                \setlength{\headheight}{52.09576pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-22.09576pt}.
+
+[38] (./Protocol.aux)
  ***********
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-05-26>
+L3 programming layer <2026-06-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 31428 strings out of 469836
- 614892 string characters out of 5467775
- 1217178 words of memory out of 5000000
- 59851 multiletter control sequences out of 15000+600000
+ 31456 strings out of 469837
+ 615602 string characters out of 5467789
+ 1245725 words of memory out of 5000000
+ 59878 multiletter control sequences out of 15000+600000
  633383 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,15n,116p,637b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Protocol.pdf (32 pages).
+Output written on Protocol.pdf (38 pages).

@@ -1,25 +1,33 @@
 ---
-title: "| RESEARCH PROTOCOL\n| \n| Metal Biliary Stent versus Plastic Biliary Stent in Patients with Pancreatic Cancer: A Comparative Safety and Effectiveness Study \n"
+title: "| RESEARCH PROTOCOL\n| \n| Metal Biliary Stent versus Plastic Biliary Stent
+  \n in Patients with Pancreatic Cancer: A Comparative Safety and Effectiveness Study"
 fontsize: 12pt
 geometry: margin=1in
 output:
   bookdown::html_document2:
     df_print: paged
-    toc: yes
+    toc: true
     toc_depth: 2
-    toc_float: yes
-    number_sections: yes
-    number_tables: yes
+    toc_float: true
+    number_sections: true
+    number_tables: true
     css: style.css
-  word_document:
-    reference_docx: ohdsi-protocol-style.docx
+  pdf_document:
+    toc: true
+    toc_depth: '2'
+  html_document:
+    toc: true
+    toc_depth: '2'
+    df_print: paged
   bookdown::pdf_document2:
-    keep_tex: yes
+    keep_tex: true
     latex_engine: xelatex
     md_extensions: +raw_attribute
-    number_sections: yes
+    number_sections: true
     includes:
       before_body: title.tex
+  word_document:
+    reference_docx: "ohdsi-protocol-style.docx"
 header-includes:
 - \usepackage[numbers,sort&compress]{natbib}
 - \usepackage{booktabs}
@@ -45,32 +53,25 @@ header-includes:
 - \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 - \newcommand{\footerDate}{`r params$date`}
 - \input{header.tex}
-longtable: yes
+longtable: true
 mainfont: Arial
 bibliography: Protocol.bib
 params:
-  date: '22-July-2026'
+  date: "27-July-2026"
   version: 0.0.3
 subtitle: 'Version: `r params$version`'
-link-citations: yes
+link-citations: true
 csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
+library()
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
-options(kableExtra.latex.load_packages = FALSE)
 library(kableExtra)
 library(dplyr)
 options(knitr.kable.NA = "")
-options(knitr.table.format = function() {
-  if (knitr::is_latex_output()) {
-    "latex"
-  } else if (knitr::is_html_output()) {
-    "html"
-  } else {
-    "pipe"
-  }
-})
+options(kableExtra.latex.load_packages = FALSE)
+
 
 latex_table_font_size <- 8
 ```
@@ -90,11 +91,11 @@ abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRU
 tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
 
 if (knitr::is_latex_output()) {
-  tab %>% kable_styling(latex_options = c("striped", "hold_position"), 
-                        font_size = latex_table_font_size)
-} else {
-  tab %>% kable_styling(bootstrap_options = "striped")
+  tab <- tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
+} else if (knitr::is_html_output()) {
+  tab <- tab %>% kable_styling(bootstrap_options = "striped")
 }
+tab
 ```
 
 \clearpage
@@ -117,11 +118,12 @@ tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
   footnote(general = "* Principal Investigator", general_title = "")
 
 if (knitr::is_latex_output()) {
-  tab %>% kable_styling(latex_options = c("striped", "hold_position"),
+  tab <- tab %>% kable_styling(latex_options = c("striped", "hold_position"),
                         font_size = latex_table_font_size)
-} else {
-  tab %>% kable_styling(bootstrap_options = "striped")
+} else if (knitr::is_html_output()) {
+  tab <- tab %>% kable_styling(bootstrap_options = "striped")
 }
+tab
 ```
 
 ## Disclosures
@@ -157,15 +159,17 @@ amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE,  
   Number; Date; Section of study protocol; Amendment or update; Reason
   1; 2025-03-18; v0.01; ; Initial draft
   2; 2026-06-15; v0.02; update;
+  3; 2026-07-27; v0.03; update; feedback
 ")
 
 tab <- kable(amendments, booktabs = TRUE, linesep = "")
 
 if (knitr::is_latex_output()) {
-  tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
-} else {
-  tab %>% kable_styling(bootstrap_options = "striped")
+  tab <- tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
+} else if (knitr::is_html_output()) {
+  tab <- tab %>% kable_styling(bootstrap_options = "striped")
 }
+tab
 ```
 
 # Rationale and Background
@@ -185,7 +189,7 @@ Current domestic and international guidelines (ESGE, ASGE, KSGE) recommend **met
 Existing RCTs may not be representative of real-world clinical populations due to strict eligibility criteria. Real-world comparative evidence on safety (cholangitis) and effectiveness (re-intervention, survival) between the two stent types is limited. A large-scale observational study using the OHDSI Common Data Model (CDM) can validate the applicability of current guidelines in real-world settings.
 
 # Study Objectives
-The overall goal of this protocols is conducting comparative safety and effectiveness research to establish evidences for benefits and harms of metal and plastic stents in patients with pancreatic cancer through OHDSI network.
+The overall goal of this protocol is conducting comparative safety and effectiveness research to establish evidences for benefits and harms of metal and plastic stents in patients with pancreatic cancer through OHDSI network.
 
 The primary objective is to compare the clinical safety and effectiveness of **metal biliary stents** versus **plastic biliary stents** in patients with pancreatic cancer-related biliary obstruction using real-world data.
 
@@ -199,7 +203,7 @@ Secondary objectives are:
 
 ## Study Design
 
-This study uses `CohortMethod` [@Schuemie2020-fa].
+This study uses `CohortMethod` [@Schuemie2024].
 
 This is a **observational study** based on a **new-user active comparator design** using the OHDSI CohortMethod package for population-level effect estimation (PLE). The new-user design mitigates immortal time bias by requiring all patients to be naive to the study exposure at cohort entry [@Suissa2008].
 
@@ -214,7 +218,7 @@ The analyses will be performed across a network of observational healthcare data
 
 ### Target Cohort — Metal Biliary Stent
 
-**Definition:** Patients with pancreatic cancer who received their first metal biliary stent insertion.
+**Definition:** Patients with pancreatic cancer whose first-ever biliary stent insertion (of any type) was a metal stent, with no prior biliary stent
 
 **Inclusion Criteria:**
 
@@ -223,26 +227,29 @@ The analyses will be performed across a network of observational healthcare data
 | Metal biliary stent insertion | Day 0 | First-ever metal biliary stent insertion (Device Exposure) |
 | Age ≥ 18 years | Day 0 | |
 | Pancreatic cancer diagnosis | Any time before Day 0 | Any recorded diagnosis prior to or on index date |
+| Continuous observation | Day −365 to Day 0 | At least 365 days of continuous observation in the database prior to and including the index date |
 
 **Exclusion Criteria:**
 
 | Criterion | Window | Description |
 |-----------|--------|-------------|
 | Cholangiocarcinoma diagnosis | Any time before Day 0 | Any prior diagnosis of cholangiocarcinoma |
+| Prior biliary stent (any type) | Any time before Day 0 | Any prior metal or plastic biliary stent insertion before index date |
 
 ### Comparator Cohort — Plastic Biliary Stent (ATLAS Cohort ID: 689)
 
-**Definition:** Patients with pancreatic cancer who received their first plastic biliary stent insertion.
+**Definition:** Patients with pancreatic cancer whose first-ever biliary stent insertion (of any type) was a plastic stent, with no prior biliary stent
 
 Inclusion and exclusion criteria are identical to the target cohort, differing only in the type of stent inserted.
+Both cohorts additionally require ≥ 365 days of continuous observation prior to the index date to ensure adequate ascertainment of baseline covariates.
 
 ### Covariate Assessment Windows
 
 | Covariate Type | Window |
 |----------------|--------|
 | Demographics | Day 0 |
-| Short-term baseline conditions and medications | Day −30 to Day 0 |
-| Long-term baseline conditions and medications | Day −365 to Day 0 |
+| Short-term baseline conditions and medications | Day −30 to Day -1 |
+| Long-term baseline conditions and medications | Day −365 to Day -1 |
 
 ## Exposure Comparators
 
@@ -268,13 +275,14 @@ Only the first-ever plastic biliary stent insertion qualifies as the index event
 | Moderate Acute Cholangitis | 719 | Moderate severity per Tokyo Guidelines 2018 criteria |
 | Cholangitis (broad definition) | 663 | Based on diagnosis codes for cholangitis |
 | All-cause Mortality | 665 | Based on CDM Death table |
+| Re-intervention | 696 | Based on device or procedure tables |
 
 ### Acute Cholangitis Definition (Tokyo Guideline 2018)
 
 The TG18/TG13 framework [@Kiriyama2018] defines acute cholangitis using three categories:
 
-- **Suspected diagnosis**: ≥1 item from **A** + ≥1 item from **B** or **C**
-- **Definite diagnosis**: ≥1 item from each of **A**, **B**, and **C**
+- **Suspected diagnosis**: one item in **A** + one item in either **B** or **C**
+- **Definite diagnosis**: one item in **A**, one item in **B** and one item in **C**
 
 **Operationalization in this study:** Category C (imaging) criteria cannot be reliably ascertained from structured OMOP CDM data. Therefore, acute cholangitis in this study is operationalized as **Suspected diagnosis** using Categories A and B only (≥1 item from **A** + ≥1 item from **B**).
 
@@ -282,35 +290,35 @@ The TG18/TG13 framework [@Kiriyama2018] defines acute cholangitis using three ca
 
 | Criterion | Threshold | OMOP Concept ID |
 |-----------|-----------|-----------------|
-| Fever / shaking chills | Body temperature > 38.0°C | 3020891 |
-| WBC (leukocytosis) | > 10,000/mm³ | 3000905 |
-| WBC (leukopenia) | < 4,000/mm³ | — |
-| CRP | ≥ 1 mg/dL | — |
+| A-1. Fever and/or shaking chills | Body temperature (BT) > 38.0°C | 3020891 |
+| A-2. WBC count (x 1,000/μL) | <4 or > 10 | 3000905 |
+| A-2. CRP (mg/dL) | ≥ 1 | 3010156 |
 
 **Category B — Cholestasis**
 
 | Criterion | Threshold | OMOP Concept ID |
 |-----------|-----------|-----------------|
-| Jaundice | Total bilirubin ≥ 2.0 mg/dL | 3010156 |
-| Liver enzymes | ALP, γGTP, AST, or ALT > 1.5× upper limit of normal | — |
+| B-1. Jaundice | Total bilirubin ≥ 2.0 mg/dL | 3024128 |
+| B-2. Liver enzymes | ALP, γGTP, AST, and ALT > 1.5× upper limit of normal | — |
 
 **Category C — Imaging** *(not ascertainable from CDM; excluded from operationalization)*
 
 | Criterion | Description |
 |-----------|-------------|
-| Biliary dilatation | Dilation of intra- or extrahepatic bile ducts on imaging |
-| Evidence of etiology | Stricture, stone, stent, or other obstructing cause on imaging |
+| Biliary dilatation |  |
+| Evidence of etiology on imaging(stricture, stone, stent etc.) | Stricture, stone, stent, or other obstructing cause on imaging |
 
 #### Severity Grading (TG18)
+Grade I (Mild) and Grade II (Moderate) severity criteria were each operationalized as a separate outcome cohort, defined as Acute Cholangitis (Cohort ID: 697) and Moderate Acute Cholangitis (Cohort ID: 719)
 
-**Grade I (Mild):** Does not meet Grade II or III criteria; responds to initial medical treatment.
+**Grade I (Mild):** Does not meet Grade II or III criteria.
 
 **Grade II (Moderate):** ≥2 of the following 5 criteria:
 
 | Criterion | Threshold |
 |-----------|-----------|
 | WBC | > 12,000 or < 4,000/mm³ |
-| Fever | ≥ 39°C |
+| Fever | BT ≥ 39°C |
 | Age | ≥ 75 years |
 | Total bilirubin | ≥ 5 mg/dL |
 | Albumin | < 0.7 × lower limit of normal |
@@ -328,7 +336,11 @@ The TG18/TG13 framework [@Kiriyama2018] defines acute cholangitis using three ca
 
 ### Biliary Re-intervention
 
-Defined as a procedure code indicating biliary stent replacement, repair, or re-insertion occurring after Day 7 from the index date.
+**Definition:** A biliary re-intervention event is defined as any procedure code indicating biliary stent replacement, reinsertion, or repair occurring after Day 7 from the index date (first stent insertion).
+
+**Identification:** Biliary re-intervention is identified using (1) the same concept sets as the exposure cohorts (metal or plastic biliary stent device exposure codes), and (2) relevant concepts from the Procedure domain, including repeat ERCP, percutaneous transhepatic biliary drainage (PTBD) insertion or exchange, and other biliary drainage procedures that do not involve in device exposure. An event is counted as a re-intervention if it occurs more than 7 days after the index date, regardless of the stent type used at re-intervention.
+
+**Rationale for Day 7 washout:** Events within the first 7 days post-index are excluded to avoid misclassifying planned staged procedures or early technical corrections as re-interventions.
 
 ## Analysis
 
@@ -341,12 +353,12 @@ Propensity scores are estimated using large-scale covariate sets from the `Featu
 | Domain | Detail | Window |
 |--------|--------|--------|
 | Demographics | Age group, sex, race, calendar month | Day 0 |
-| Conditions | Condition Group Era | Short-term (−30 to 0) |
-| Medications | Drug Group Era | Short-term (−30 to 0), Long-term (−365 to 0) |
-| Measurements | Measurement values | Long-term (−365 to 0) |
-| Measurement ranges | Measurement Range Group | Short-term, Long-term |
-| Observations | Observation | Short-term (−30 to 0) |
-| Composite indices | Charlson Comorbidity Index, DCSI, CHADS2Vasc | Day 0 |
+| Conditions | Condition Group Era | Short-term (−30 to -1), Long-term (−365 to -1) |
+| Medications | Drug Group Era | Short-term (−30 to -1), Long-term (−365 to -1) |
+| Measurements | Measurement values | Short-term (−30 to -1), Long-term (−365 to -1) |
+| Measurement ranges | Measurement Range Group | Short-term (−30 to -1), Long-term (−365 to -1) |
+| Observations | Observation | Short-term (−30 to -1), Long-term (−365 to -1)) |
+| Composite indices | Charlson Comorbidity Index | Day 0 |
 
 
 ### Propensity Score Matching
@@ -373,10 +385,26 @@ All analyses apply the intent-to-treat (ITT) principle.
 
 ### Outcome Model
 
-- **Model:** Cox Proportional Hazard Model
+**Primary Analysis**
+
+- **Model:** Cause-specific Cox Proportional Hazard Model
 - **Effect Estimate:** Hazard Ratio (HR) with 95% Confidence Interval
+- **Censoring:** All-cause death is treated as a non-informative censoring event
+  for the cholangitis and re-intervention outcomes
 - **Primary Reporting Timepoint:** 365 days from index date (Analysis ID 4)
-- **Survival Visualization:** Kaplan-Meier survival curves
+- **Survival Visualization (All-cause Mortality only):** Kaplan-Meier survival curves
+
+**Sensitivity Analysis — Competing Risk of Death**
+
+Given the high mortality rate associated with pancreatic cancer, all-cause death constitutes a competing risk for the acute cholangitis and biliary re-intervention outcomes. Standard Cox/KM approaches that treat death as non-informative censoring may overestimate the cumulative incidence of these outcomes. To address this, the following sensitivity analyses are conducted for the cholangitis and re-intervention outcomes only:
+
+- **Model:** Fine-Gray subdistribution hazard model, with all-cause death specified as a competing risk
+- **Effect Estimate:** Subdistribution Hazard Ratio (sHR) with 95% Confidence Interval
+- **Visualization:** Cumulative Incidence Function (CIF), accounting for the competing risk of death, presented alongside the cause-specific Cox model results
+
+All-cause mortality is not subject to competing risk considerations and is
+therefore analyzed using the cause-specific Cox model and Kaplan-Meier
+visualization only, as specified above.
 
 ### Empirical Calibration
 
@@ -415,6 +443,7 @@ Power calculations will be conducted based on observed event rates for each outc
 1. **Observational study limitations:** Absence of randomization means unmeasured confounding cannot be fully excluded
 2. **Single database:** Generalizability of results may be limited
 3. **Outcome misclassification — acute cholangitis:** The TG18 definite diagnosis requires imaging evidence of biliary obstruction or dilatation (Category C); however, structured imaging findings are not reliably captured in the OMOP CDM. Consequently, acute cholangitis is operationalized using a **suspected diagnosis** criterion (Categories A + B only), which may result in outcome misclassification. Cases meeting only laboratory criteria without imaging confirmation may represent other etiologies, potentially inflating the observed incidence of cholangitis.
+4.**Competing risk of death:** The standard Cox proportional hazards and Kaplan-Meier approach assumes death is a non-informative censoring event. Given the high mortality rate in pancreatic cancer patients, this assumption may be violated, potentially overestimating the cumulative incidence of cholangitis and re-intervention. To mitigate this limitation, a sensitivity analysis using the Fine-Gray subdistribution hazard model, treating all-cause death as a competing risk, is conducted for these outcomes.
 
 # Protection of Human Subjects
 
@@ -440,6 +469,11 @@ The study results will be posted on the OHDSI website after completion of the st
 # (APPENDIX) Appendix {-}
 
 # Exposure Cohort Definitions
+```{r debug-format, echo=FALSE}
+cat("pandoc_to():", knitr::pandoc_to(), "\n")
+cat("is_latex_output():", knitr::is_latex_output(), "\n")
+cat("is_html_output():", knitr::is_html_output(), "\n")
+```
 
 ```{r exposure-cohorts, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 source("../R/PrettyOutput.R")
@@ -485,15 +519,14 @@ printCohortDefinitionFromNameAndJson(
   json = SqlRender::readSql("../inst/cohorts/yjpark_BS_allcause_death.json"),
   withConcepts = TRUE
 )
+
+printCohortDefinitionFromNameAndJson(
+  name = "Re-intervention (ATLAS Cohort ID: 696)",
+  json = SqlRender::readSql("../inst/cohorts/yjpark_BS_ReInterventiontotal.json"),
+  withConcepts = TRUE
+)
 ```
 
-## Biliary Re-intervention
-
-**Definition:** A biliary re-intervention event is defined as any procedure code indicating biliary stent replacement, reinsertion, or repair occurring after Day 7 from the index date (first stent insertion).
-
-**Identification:** Biliary re-intervention is identified using the same concept sets as the exposure cohorts (metal or plastic biliary stent device exposure codes). An event is counted as a re-intervention if it occurs more than 7 days after the index date, regardless of the stent type used at re-intervention.
-
-**Rationale for Day 7 washout:** Events within the first 7 days post-index are excluded to avoid misclassifying planned staged procedures or early technical corrections as re-interventions.
 
 # Negative Control Concepts {#negative-control-concepts}
 

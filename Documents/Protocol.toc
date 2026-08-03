@@ -1,0 +1,104 @@
+\contentsline {section}{\numberline {1}List of Abbreviations}{2}{section.1}%
+\contentsline {section}{\numberline {2}Responsible Parties}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Investigators}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Disclosures}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Abstract}{5}{section.3}%
+\contentsline {section}{\numberline {4}Amendments and Updates}{6}{section.4}%
+\contentsline {section}{\numberline {5}Rationale and Background}{6}{section.5}%
+\contentsline {section}{\numberline {6}Study Objectives}{7}{section.6}%
+\contentsline {section}{\numberline {7}Research Methods}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Study Design}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Data Sources}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Study Population}{8}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Target Cohort --- Metal Biliary Stent}{8}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Comparator Cohort --- Plastic Biliary Stent (ATLAS Cohort ID: 689)}{8}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Covariate Assessment Windows}{8}{subsubsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.4}Exposure Comparators}{9}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Target --- Metal Biliary Stent}{9}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Comparator --- Plastic Biliary Stent}{9}{subsubsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.5}Outcomes}{9}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Primary Outcomes}{9}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Acute Cholangitis Definition (Tokyo Guideline 2018)}{10}{subsubsection.7.5.2}%
+\contentsline {paragraph}{\numberline {7.5.2.1}Severity Grading (TG18)}{11}{paragraph.7.5.2.1}%
+\contentsline {subsubsection}{\numberline {7.5.3}Biliary Re-intervention}{11}{subsubsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.6}Analysis}{12}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Covariates}{12}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Propensity Score Matching}{12}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}Balance Assessment}{12}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}Follow-up Windows}{12}{subsubsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.5}Outcome Model}{13}{subsubsection.7.6.5}%
+\contentsline {subsubsection}{\numberline {7.6.6}Empirical Calibration}{14}{subsubsection.7.6.6}%
+\contentsline {section}{\numberline {8}Sample Size and Study Power}{14}{section.8}%
+\contentsline {section}{\numberline {9}Strengths and Limitations}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Strengths}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Limitations}{15}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Protection of Human Subjects}{15}{section.10}%
+\contentsline {section}{\numberline {11}Management and Reporting of Adverse Events and Adverse Reactions}{15}{section.11}%
+\contentsline {section}{\numberline {12}Plans for Disseminating and Communicating Study Results}{16}{section.12}%
+\contentsline {section}{References}{17}{section*.5}%
+\contentsline {section}{\numberline {A}Exposure Cohort Definitions}{18}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Metal Biliary Stent with Pancreatic Cancer (Target, ATLAS ID: 688)}{18}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Cohort Entry Events}{18}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}Additional Inclusion Criteria}{18}{subsubsection.A.1.2}%
+\contentsline {paragraph}{I. Age of more than 18 years}{18}{section*.7}%
+\contentsline {paragraph}{III. Patient without Bile duct cancer (all-0d)}{18}{section*.8}%
+\contentsline {paragraph}{IV. Patient without Metal/Plastic biliary Stent before (all-1d)}{18}{section*.9}%
+\contentsline {subsubsection}{\numberline {A.1.3}Cohort Exit}{18}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}Cohort Eras}{19}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.5}Concept: {[}yiju{]} Cancer of pancreas}{19}{subsubsection.A.1.5}%
+\contentsline {subsubsection}{\numberline {A.1.6}Concept: {[}yiju{]} Cancer of bile duct}{20}{subsubsection.A.1.6}%
+\contentsline {subsubsection}{\numberline {A.1.7}Concept: {[}yiju{]} Metal Biliary Stent}{22}{subsubsection.A.1.7}%
+\contentsline {subsubsection}{\numberline {A.1.8}Concept: {[}yiju{]} Biliary Stent}{22}{subsubsection.A.1.8}%
+\contentsline {subsection}{\numberline {A.2}Plastic Biliary Stent with Pancreatic Cancer (Comparator, ATLAS ID: 689)}{22}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Cohort Entry Events}{22}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Additional Inclusion Criteria}{23}{subsubsection.A.2.2}%
+\contentsline {paragraph}{I. Age of more than 18 years}{23}{section*.10}%
+\contentsline {paragraph}{III. Patient without Bile duct cancer (all-0d)}{23}{section*.11}%
+\contentsline {paragraph}{IV. Patient without Metal/Plastic biliary stent before (all-1d)}{23}{section*.12}%
+\contentsline {subsubsection}{\numberline {A.2.3}Cohort Exit}{23}{subsubsection.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Cohort Eras}{23}{subsubsection.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}Concept: {[}yiju{]} Cancer of pancreas}{23}{subsubsection.A.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.6}Concept: {[}yiju{]} Cancer of biliary stent}{25}{subsubsection.A.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.7}Concept: {[}yiju{]} Plastic Biliary Stent}{26}{subsubsection.A.2.7}%
+\contentsline {subsubsection}{\numberline {A.2.8}Concept: {[}yiju{]} Biliary stent}{27}{subsubsection.A.2.8}%
+\contentsline {section}{\numberline {B}Outcome Cohort Definitions}{27}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Acute Cholangitis (Tokyo Guideline 2018, ATLAS Cohort ID: 697)}{27}{subsection.B.1}%
+\contentsline {subsubsection}{\numberline {B.1.1}Cohort Entry Events}{27}{subsubsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.2}Cohort Exit}{27}{subsubsection.B.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.3}Cohort Eras}{27}{subsubsection.B.1.3}%
+\contentsline {subsubsection}{\numberline {B.1.4}Concept: {[}yiju{]} Total Bilirubin}{28}{subsubsection.B.1.4}%
+\contentsline {subsubsection}{\numberline {B.1.5}Concept: {[}yiju{]} WBC count}{28}{subsubsection.B.1.5}%
+\contentsline {subsubsection}{\numberline {B.1.6}Concept: {[}yiju{]} Body temperature}{28}{subsubsection.B.1.6}%
+\contentsline {subsubsection}{\numberline {B.1.7}Concept: {[}yiju{]} CRP}{28}{subsubsection.B.1.7}%
+\contentsline {subsection}{\numberline {B.2}Moderate Acute Cholangitis (Tokyo Guideline 2018, ATLAS Cohort ID: 719)}{28}{subsection.B.2}%
+\contentsline {subsubsection}{\numberline {B.2.1}Cohort Entry Events}{28}{subsubsection.B.2.1}%
+\contentsline {subsubsection}{\numberline {B.2.2}Additional Inclusion Criteria}{29}{subsubsection.B.2.2}%
+\contentsline {paragraph}{I. hyperbilirubinemia}{29}{section*.13}%
+\contentsline {paragraph}{II. WBC}{29}{section*.14}%
+\contentsline {subsubsection}{\numberline {B.2.3}Cohort Exit}{29}{subsubsection.B.2.3}%
+\contentsline {subsubsection}{\numberline {B.2.4}Cohort Eras}{29}{subsubsection.B.2.4}%
+\contentsline {subsubsection}{\numberline {B.2.5}Concept: {[}yiju{]} Hyperbilirubinemia}{29}{subsubsection.B.2.5}%
+\contentsline {subsubsection}{\numberline {B.2.6}Concept: {[}yiju{]} WBC count}{29}{subsubsection.B.2.6}%
+\contentsline {subsubsection}{\numberline {B.2.7}Concept: {[}yjpark{]} BS\_Cholangitis}{29}{subsubsection.B.2.7}%
+\contentsline {subsubsection}{\numberline {B.2.8}Concept: {[}yiju{]} Total Bilirubin}{30}{subsubsection.B.2.8}%
+\contentsline {subsection}{\numberline {B.3}Cholangitis - Broad Definition (ATLAS Cohort ID: 663)}{30}{subsection.B.3}%
+\contentsline {subsubsection}{\numberline {B.3.1}Cohort Entry Events}{30}{subsubsection.B.3.1}%
+\contentsline {subsubsection}{\numberline {B.3.2}Cohort Exit}{30}{subsubsection.B.3.2}%
+\contentsline {subsubsection}{\numberline {B.3.3}Cohort Eras}{30}{subsubsection.B.3.3}%
+\contentsline {subsubsection}{\numberline {B.3.4}Concept: {[}yiju{]} Total Bilirubin}{30}{subsubsection.B.3.4}%
+\contentsline {subsubsection}{\numberline {B.3.5}Concept: {[}yiju{]} WBC count}{30}{subsubsection.B.3.5}%
+\contentsline {subsubsection}{\numberline {B.3.6}Concept: {[}yiju{]} BS\_Cholangitis}{31}{subsubsection.B.3.6}%
+\contentsline {subsection}{\numberline {B.4}All-cause Mortality (ATLAS Cohort ID: 665)}{31}{subsection.B.4}%
+\contentsline {subsubsection}{\numberline {B.4.1}Cohort Entry Events}{31}{subsubsection.B.4.1}%
+\contentsline {subsubsection}{\numberline {B.4.2}Cohort Exit}{31}{subsubsection.B.4.2}%
+\contentsline {subsubsection}{\numberline {B.4.3}Cohort Eras}{31}{subsubsection.B.4.3}%
+\contentsline {subsection}{\numberline {B.5}Re-intervention (ATLAS Cohort ID: 696)}{31}{subsection.B.5}%
+\contentsline {subsubsection}{\numberline {B.5.1}Cohort Entry Events}{31}{subsubsection.B.5.1}%
+\contentsline {subsubsection}{\numberline {B.5.2}Additional Inclusion Criteria}{32}{subsubsection.B.5.2}%
+\contentsline {paragraph}{I. prior device exposure/ prior procedure}{32}{section*.15}%
+\contentsline {subsubsection}{\numberline {B.5.3}Cohort Exit}{32}{subsubsection.B.5.3}%
+\contentsline {subsubsection}{\numberline {B.5.4}Cohort Eras}{32}{subsubsection.B.5.4}%
+\contentsline {subsubsection}{\numberline {B.5.5}Concept: {[}yiju{]} total biliary stent}{32}{subsubsection.B.5.5}%
+\contentsline {subsubsection}{\numberline {B.5.6}Concept: {[}yiju{]} reintervention procedure}{34}{subsubsection.B.5.6}%
+\contentsline {subsubsection}{\numberline {B.5.7}Concept: {[}yiju{]} ERCP, PTBD}{35}{subsubsection.B.5.7}%
+\contentsline {section}{\numberline {C}Negative Control Concepts}{35}{appendix.C}%
