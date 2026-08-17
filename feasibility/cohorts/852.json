@@ -1,0 +1,2391 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4180793,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363418001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37204852,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "783771003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Acinar cell carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45763891,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "700423003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Adenocarcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4115272,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "254609000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4181331,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363368005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of body of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4110585,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "254612002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of endocrine pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4209933,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "326072005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of head of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4157459,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372142002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4178960,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363369002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of tail of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4340498,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "235966007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cystadenocarcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37395837,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "715414009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Familial malignant neoplasm of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36683250,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "780821007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Invasive intraductal papillary-mucinous carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4201481,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "314964006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Local recurrence of malignant tumor of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 765387,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "143401000119106",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant carcinoid tumor of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37017016,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "713189001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant insulinoma",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 764972,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "97051000119105",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant melanoma metastatic to pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4092074,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187798008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of ectopic pancreatic tissue",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4092069,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187786003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of sphincter of Oddi",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4178966,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363417006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4092072,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187791002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of body of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4112734,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "254611009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of endocrine pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4111024,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "255088001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of exocrine pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4178967,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363419009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of head of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4095437,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187794005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of Islets of Langerhans",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4180793,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363418001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4094866,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187793004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of pancreatic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4095436,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187792009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of tail of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4112774,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "285614004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Metastasis to pancreas of unknown primary",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3655588,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "866052009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Mixed ductal-neuroendocrine carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37206235,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "785879009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Mucinous cystadenocarcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3655584,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "866048009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Mucinous cystic neoplasm with invasive carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 192261,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "109848009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Overlapping malignant neoplasm of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37311469,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "792907004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Pancreatic ductal adenocarcinoma",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36715928,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "721718003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36713362,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "681621000119105",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of body of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36713363,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "681721000119103",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of head of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42872399,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1651000119109",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 441225,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "371967001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 434293,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "93715005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of body of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 440649,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372119009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of head of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 25486,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "93843007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of islets of Langerhans",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 199754,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372003004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 433423,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "93939009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of pancreatic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 432843,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94082003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of tail of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116589,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733351008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42536743,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "735735001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4311634,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94164003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4246368,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94212002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of body of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4312017,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94325008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of head of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4248063,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94354002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of islets of Langerhans",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4248192,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94459006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4315550,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94460001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of pancreatic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4311347,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94618007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of tail of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37204808,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "783706007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Serous cystadenocarcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37204187,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "782697005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Solid pseudopapillary carcinoma of pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36674768,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "770602005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Squamous cell carcinoma of exocrine pancreas",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[yiju] Cancer of pancreas",
+      "id": 0
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4181345,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363415003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 35623402,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "765741003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Adenocarcinoma of gallbladder and extrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37204022,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "787091002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Adenocarcinoma of liver and intrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4116242,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "255086002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma common bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4115272,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "254609000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4162877,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372101000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of extrahepatic bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4162998,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372140005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Carcinoma of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4208660,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "312104005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cholangiocarcinoma of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4001664,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "109842005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Intrahepatic bile duct carcinoma",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4098954,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "253017000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Klatskin's tumor",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4196255,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "314962005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Local recurrence of malignant tumor of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3655605,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "866070007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant mesenchymal neoplasm of bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3655606,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "866071006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant mesenchymal neoplasm of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4095434,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187784000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of hepatic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4089662,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187773007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of interlobular bile ducts",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4089663,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187776004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of intrahepatic canaliculi",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4094865,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187777008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of intrahepatic gall duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4092069,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "187786003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant neoplasm of sphincter of Oddi",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4116243,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "255087006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant polyp of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4178966,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363417006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4177105,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363416002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of extrahepatic bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4181327,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "363353009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Malignant tumor of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 198695,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "109847004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Overlapping malignant neoplasm of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3655520,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "865951006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Perihilar cholangiocarcinoma",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36715928,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "721718003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116592,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733354000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36717173,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "721559007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of common bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36715798,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "721558004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of cystic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37018657,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "9541000119105",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary adenocarcinoma of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36715927,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "721716004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary cholangiocarcinoma of intrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 441225,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "371967001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 194589,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "371970002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4246034,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "93763008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of common bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4247824,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "93770008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of cystic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40492416,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "447416008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of distal bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40486896,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "446189008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of extrahepatic bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 197806,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "372139008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40490929,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "447109003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of intrahepatic bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40489795,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "446807009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neoplasm of perihilar bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116589,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733351008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116591,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733353006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116586,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733348001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of cystic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116588,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733350009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of distal bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42538835,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "762665002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary malignant neuroendocrine neoplasm of perihilar bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116590,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733352001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary mucinous cystic neoplasm with associated invasive carcinoma of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37118669,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733347006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary mucinous cystic neoplasm with associated invasive carcinoma of cystic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116587,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733349009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary mucinous cystic neoplasm with associated invasive carcinoma of distal bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37116585,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "733346002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Primary mucinous cystic neoplasm with associated invasive carcinoma of perihilar bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4311634,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94164003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of ampulla of Vater",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4311638,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94185003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4247946,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94262007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of common bile duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4247947,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94270002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of cystic duct",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4312301,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94291005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of extrahepatic bile ducts",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4313079,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94312000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of gallbladder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4312024,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "94349006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Secondary malignant neoplasm of intrahepatic bile ducts",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 35624313,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "766978002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Squamous cell carcinoma of gallbladder and extrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36674831,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "770684008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Squamous cell carcinoma of liver and intrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36674832,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "770685009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Undifferentiated carcinoma of liver and intrahepatic biliary tract",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[yiju] Cancer of bile duct",
+      "id": 1
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45771175,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "701406003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Polymeric biliary stent",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Physical Object",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42087127,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202031",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ADVANIX BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42088559,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202105",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42089079,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202021",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "C-FLEX PIGTAIL BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090449,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202282",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-LEUNG BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42090450,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202382",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "COTTON-LEUNG BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42092740,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202011",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "FLEXIMA BILIARY STENT SYSTEM",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42098363,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202001",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "PERCUFLEX AMSTERDAM BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42100653,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5203182",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "SOLUS BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42100842,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5203082",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ST-2 SOEHENDRA TANNENBAUM BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103466,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202482",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZIMMON BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 42103467,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "J5202582",
+            "VOCABULARY_ID": "EDI",
+            "CONCEPT_NAME": "ZIMMON BILIARY STENT",
+            "DOMAIN_ID": "Device",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Device",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[yiju] Plastic Biliary Stent",
+      "id": 3
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4234567,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "360123005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Biliary stent",
+          "DOMAIN_ID": "Device",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Physical Object",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "[yiju] Biliary stent",
+      "id": 4
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [
+    {
+      "expression": {
+        "CriteriaList": [],
+        "Type": "ALL",
+        "DemographicCriteriaList": [{
+          "Ethnicity": null,
+          "OccurrenceEndDate": null,
+          "Race": null,
+          "Gender": null,
+          "OccurrenceStartDate": null,
+          "Age": {
+            "Op": "gt",
+            "Extent": null,
+            "Value": 18
+          }
+        }],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Age of more than 18 years",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"ConditionOccurrence": {
+            "OccurrenceEndDate": null,
+            "CorrelatedCriteria": null,
+            "ConditionTypeExclude": false,
+            "CodesetId": 0,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "ConditionType": null,
+            "ConditionSourceConcept": null,
+            "ConditionStatus": null,
+            "StopReason": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "CountColumn": null,
+            "IsDistinct": false,
+            "Count": 1
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Patient with Pancreatic cancer (all-0d)",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"ConditionOccurrence": {
+            "OccurrenceEndDate": null,
+            "CorrelatedCriteria": null,
+            "ConditionTypeExclude": false,
+            "CodesetId": 1,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "ConditionType": null,
+            "ConditionSourceConcept": null,
+            "ConditionStatus": null,
+            "StopReason": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "CountColumn": null,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Patient without Bile duct cancer (all-0d)",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 7,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DeviceExposure": {
+            "OccurrenceEndDate": null,
+            "DeviceTypeExclude": false,
+            "CorrelatedCriteria": null,
+            "CodesetId": 4,
+            "Quantity": null,
+            "UniqueDeviceId": null,
+            "ProviderSpecialty": null,
+            "DeviceSourceConcept": null,
+            "Gender": null,
+            "DeviceType": null,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "CountColumn": null,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Patient without Metal/Plastic biliary stent before (all-7d)",
+      "description": null
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DeviceExposure": {
+      "OccurrenceEndDate": null,
+      "DeviceTypeExclude": false,
+      "CorrelatedCriteria": null,
+      "CodesetId": 3,
+      "Quantity": null,
+      "UniqueDeviceId": null,
+      "ProviderSpecialty": null,
+      "DeviceSourceConcept": null,
+      "Gender": null,
+      "DeviceType": null,
+      "VisitType": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 365
+    }
+  }
+}
