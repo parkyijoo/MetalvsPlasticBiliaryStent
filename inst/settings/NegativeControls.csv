@@ -1,126 +1,255 @@
 targetId,comparatorId,outcomeId,outcomeName,type
-688,689,4218106,Alcoholism,outcome
-688,689,440424,Aphasia,outcome
-688,689,378424,Astigmatism,outcome
-688,689,261880,Atelectasis,outcome
-688,689,80509,Bone cyst,outcome
-688,689,434626,Borderline personality disorder,outcome
-688,689,438407,Bulimia nervosa,outcome
-688,689,134765,Cachexia,outcome
-688,689,4172458,Candidiasis of skin,outcome
-688,689,381581,Chalazion,outcome
-688,689,4047787,Colles' fracture,outcome
-688,689,198075,Condyloma acuminatum of the anogenital region,outcome
-688,689,133228,Dental caries,outcome
-688,689,433440,Dysthymia,outcome
-688,689,376132,Ectropion,outcome
-688,689,74855,Genital herpes simplex,outcome
-688,689,195212,Hypercortisolism,outcome
-688,689,140362,Hypoparathyroidism,outcome
-688,689,439840,Lymphangitis,outcome
-688,689,436100,Narcolepsy,outcome
-688,689,4215978,Onychomycosis,outcome
-688,689,4171915,Orchitis,outcome
-688,689,380731,Otitis externa,outcome
-688,689,192606,Paraplegia,outcome
-688,689,4153877,Post-traumatic wound infection,outcome
-688,689,373478,Presbyopia,outcome
-688,689,194997,Prostatitis,outcome
-688,689,380395,Retinal dystrophy,outcome
-688,689,4339088,Testicular mass,outcome
-688,689,440814,Torticollis,outcome
-688,689,4028970,Tracheobronchitis,outcome
-688,689,4114197,Tumor of hypothalamus,outcome
-688,689,4092565,Uterine prolapse,outcome
-688,689,197036,Vesicoureteric reflux,outcome
-688,689,435613,Cellulitis,outcome
-688,689,4049417,Vesicular eczema,outcome
-688,689,436675,Anorexia nervosa,outcome
-688,689,432590,Delusional disorder,outcome
-688,689,194696,Dysmenorrhea,outcome
-688,689,4135082,Dislocation of distal radioulnar joint,outcome
-688,689,4001458,Fatigue fracture of vertebra,outcome
-688,689,440129,Hypertrophy of nasal turbinates,outcome
-688,689,380839,Tuberous sclerosis syndrome,outcome
-688,689,134619,Toxic nodular goiter,outcome
-688,689,377535,Sleep walking disorder,outcome
-688,689,4239381,Psychoactive substance abuse,outcome
-688,689,40443308,Polycystic ovary syndrome,outcome
-688,689,376938,Neurofibromatosis syndrome,outcome
-688,689,4304008,Memory impairment,outcome
-688,689,374655,Mastoiditis,outcome
-688,689,72418,Scoliosis deformity of spine,outcome
-688,689,4142905,Fracture of rib,outcome
-688,689,435093,Closed fracture of femur,outcome
-688,689,42873169,Sprain of shoulder rotator cuff,outcome
-688,689,316457,Mallory-Weiss syndrome,outcome
-688,689,436676,Posttraumatic stress disorder,outcome
-688,689,30234,Neck sprain,outcome
-688,689,74189,Sprain of cruciate ligament of knee,outcome
-688,689,139902,Allergic urticaria,outcome
-688,689,376707,Acute conjunctivitis,outcome
-688,689,437082,Ankylosing spondylitis,outcome
-688,689,198803,Benign prostatic hyperplasia,outcome
-688,689,377910,Deviated nasal septum,outcome
-688,689,134453,Bursitis,outcome
-688,689,138463,Aphthous ulcer of mouth,outcome
-688,689,199861,Perianal abscess,outcome
-688,689,4079750,Osteoarthritis of knee,outcome
-688,689,4150372,Acute otitis media,outcome
-688,689,141323,Acute maxillary sinusitis,outcome
-688,689,433527,Endometriosis (clinical),outcome
-688,689,140168,Psoriasis,outcome
-688,689,81878,Benign paroxysmal positional vertigo,outcome
-688,689,198202,Cystocele,outcome
-688,689,374366,Sensorineural hearing loss,outcome
-688,689,380094,Carpal tunnel syndrome,outcome
-688,689,77965,Acquired trigger finger,outcome
-688,689,72576,Benign tumor of breast,outcome
-688,689,4207307,Infective meningitis,outcome
-688,689,201792,Nongonococcal urethritis,outcome
-688,689,4131595,Fracture of radius,outcome
-688,689,4299544,Acanthosis nigricans,outcome
-688,689,30441,Sialolithiasis,outcome
-688,689,73300,Radial styloid tenosynovitis,outcome
-688,689,135215,Hashimoto thyroiditis,outcome
-688,689,4068482,Prolapsed lumbar intervertebral disc,outcome
-688,689,433450,Paranoid schizophrenia,outcome
-688,689,141933,Alopecia areata,outcome
-688,689,381444,Contusion of eye,outcome
-688,689,437116,Closed fracture of distal end of radius,outcome
-688,689,4140300,Compression fracture of lumbar spine,outcome
-688,689,4002998,"Fracture of crown of tooth, enamel and dentin, without pulp exposure",outcome
-688,689,4129394,Fracture of lumbar spine,outcome
-688,689,4320022,Fracture of orbit,outcome
-688,689,4134318,Fractured nasal bones,outcome
-688,689,4069306,Idiopathic osteoporosis with pathological fracture,outcome
-688,689,4069524,Osteoporotic fracture of lumbar vertebra,outcome
-688,689,4133612,Tooth crown fracture,outcome
-688,689,434500,Closed fracture of neck of femur,outcome
-688,689,78272,Sprain of wrist,outcome
-688,689,132466,Lumbar sprain,outcome
-688,689,30234,Neck sprain,outcome
-688,689,81151,Sprain of ankle,outcome
-688,689,4133015,Sprain of anterior cruciate ligament of knee,outcome
-688,689,40620346,Sprain of neck,outcome
-688,689,74194,Sprain of spinal ligament,outcome
-688,689,73649,Contusion of finger,outcome
-688,689,4167102,Laceration of finger,outcome
-688,689,436077,Developmental delay,outcome
-688,689,4031019,Allergic contact dermatitis,outcome
-688,689,134438,Contact dermatitis,outcome
-688,689,4031019,Allergic contact dermatitis,outcome
-688,689,133834,Atopic dermatitis,outcome
-688,689,137053,Seborrheic dermatitis,outcome
-688,689,4169287,Itching of skin,outcome
-688,689,4300441,Burn scar,outcome
-688,689,36713492,Non-erosive gastro-esophageal reflux disease,outcome
-688,689,377558,Irregular astigmatism,outcome
-688,689,380706,Regular astigmatism,outcome
-688,689,132706,Disorder of nail,outcome
-688,689,139099,Ingrowing nail,outcome
-688,689,439776,Autism spectrum disorder,outcome
-688,689,74124,Traumatic arthropathy,outcome
-688,689,4298596,Post-traumatic scar,outcome
-688,689,436676,Posttraumatic stress disorder,outcome
-688,689,4028970,Tracheobronchitis,outcome
+851,852,4218106,Alcoholism,outcome
+851,852,440424,Aphasia,outcome
+851,852,378424,Astigmatism,outcome
+851,852,261880,Atelectasis,outcome
+851,852,80509,Bone cyst,outcome
+851,852,434626,Borderline personality disorder,outcome
+851,852,438407,Bulimia nervosa,outcome
+851,852,134765,Cachexia,outcome
+851,852,4172458,Candidiasis of skin,outcome
+851,852,381581,Chalazion,outcome
+851,852,4047787,Colles' fracture,outcome
+851,852,198075,Condyloma acuminatum of the anogenital region,outcome
+851,852,133228,Dental caries,outcome
+851,852,433440,Dysthymia,outcome
+851,852,376132,Ectropion,outcome
+851,852,74855,Genital herpes simplex,outcome
+851,852,195212,Hypercortisolism,outcome
+851,852,140362,Hypoparathyroidism,outcome
+851,852,439840,Lymphangitis,outcome
+851,852,436100,Narcolepsy,outcome
+851,852,4215978,Onychomycosis,outcome
+851,852,4171915,Orchitis,outcome
+851,852,380731,Otitis externa,outcome
+851,852,192606,Paraplegia,outcome
+851,852,4153877,Post-traumatic wound infection,outcome
+851,852,373478,Presbyopia,outcome
+851,852,194997,Prostatitis,outcome
+851,852,380395,Retinal dystrophy,outcome
+851,852,4339088,Testicular mass,outcome
+851,852,440814,Torticollis,outcome
+851,852,4028970,Tracheobronchitis,outcome
+851,852,4114197,Tumor of hypothalamus,outcome
+851,852,4092565,Uterine prolapse,outcome
+851,852,197036,Vesicoureteric reflux,outcome
+851,852,435613,Cellulitis,outcome
+851,852,4049417,Vesicular eczema,outcome
+851,852,436675,Anorexia nervosa,outcome
+851,852,432590,Delusional disorder,outcome
+851,852,194696,Dysmenorrhea,outcome
+851,852,4135082,Dislocation of distal radioulnar joint,outcome
+851,852,4001458,Fatigue fracture of vertebra,outcome
+851,852,440129,Hypertrophy of nasal turbinates,outcome
+851,852,380839,Tuberous sclerosis syndrome,outcome
+851,852,134619,Toxic nodular goiter,outcome
+851,852,377535,Sleep walking disorder,outcome
+851,852,4239381,Psychoactive substance abuse,outcome
+851,852,40443308,Polycystic ovary syndrome,outcome
+851,852,376938,Neurofibromatosis syndrome,outcome
+851,852,4304008,Memory impairment,outcome
+851,852,374655,Mastoiditis,outcome
+851,852,72418,Scoliosis deformity of spine,outcome
+851,852,4142905,Fracture of rib,outcome
+851,852,435093,Closed fracture of femur,outcome
+851,852,42873169,Sprain of shoulder rotator cuff,outcome
+851,852,316457,Mallory-Weiss syndrome,outcome
+851,852,436676,Posttraumatic stress disorder,outcome
+851,852,30234,Neck sprain,outcome
+851,852,74189,Sprain of cruciate ligament of knee,outcome
+851,852,139902,Allergic urticaria,outcome
+851,852,376707,Acute conjunctivitis,outcome
+851,852,437082,Ankylosing spondylitis,outcome
+851,852,198803,Benign prostatic hyperplasia,outcome
+851,852,377910,Deviated nasal septum,outcome
+851,852,134453,Bursitis,outcome
+851,852,138463,Aphthous ulcer of mouth,outcome
+851,852,199861,Perianal abscess,outcome
+851,852,4079750,Osteoarthritis of knee,outcome
+851,852,4150372,Acute otitis media,outcome
+851,852,141323,Acute maxillary sinusitis,outcome
+851,852,433527,Endometriosis (clinical),outcome
+851,852,140168,Psoriasis,outcome
+851,852,81878,Benign paroxysmal positional vertigo,outcome
+851,852,198202,Cystocele,outcome
+851,852,374366,Sensorineural hearing loss,outcome
+851,852,380094,Carpal tunnel syndrome,outcome
+851,852,77965,Acquired trigger finger,outcome
+851,852,72576,Benign tumor of breast,outcome
+851,852,4207307,Infective meningitis,outcome
+851,852,201792,Nongonococcal urethritis,outcome
+851,852,4131595,Fracture of radius,outcome
+851,852,4299544,Acanthosis nigricans,outcome
+851,852,30441,Sialolithiasis,outcome
+851,852,73300,Radial styloid tenosynovitis,outcome
+851,852,135215,Hashimoto thyroiditis,outcome
+851,852,4068482,Prolapsed lumbar intervertebral disc,outcome
+851,852,433450,Paranoid schizophrenia,outcome
+851,852,141933,Alopecia areata,outcome
+851,852,381444,Contusion of eye,outcome
+851,852,437116,Closed fracture of distal end of radius,outcome
+851,852,4140300,Compression fracture of lumbar spine,outcome
+851,852,4002998,"Fracture of crown of tooth, enamel and dentin, without pulp exposure",outcome
+851,852,4129394,Fracture of lumbar spine,outcome
+851,852,4320022,Fracture of orbit,outcome
+851,852,4134318,Fractured nasal bones,outcome
+851,852,4069306,Idiopathic osteoporosis with pathological fracture,outcome
+851,852,4069524,Osteoporotic fracture of lumbar vertebra,outcome
+851,852,4133612,Tooth crown fracture,outcome
+851,852,434500,Closed fracture of neck of femur,outcome
+851,852,78272,Sprain of wrist,outcome
+851,852,132466,Lumbar sprain,outcome
+851,852,30234,Neck sprain,outcome
+851,852,81151,Sprain of ankle,outcome
+851,852,4133015,Sprain of anterior cruciate ligament of knee,outcome
+851,852,40620346,Sprain of neck,outcome
+851,852,74194,Sprain of spinal ligament,outcome
+851,852,73649,Contusion of finger,outcome
+851,852,4167102,Laceration of finger,outcome
+851,852,436077,Developmental delay,outcome
+851,852,4031019,Allergic contact dermatitis,outcome
+851,852,134438,Contact dermatitis,outcome
+851,852,4031019,Allergic contact dermatitis,outcome
+851,852,133834,Atopic dermatitis,outcome
+851,852,137053,Seborrheic dermatitis,outcome
+851,852,4169287,Itching of skin,outcome
+851,852,4300441,Burn scar,outcome
+851,852,36713492,Non-erosive gastro-esophageal reflux disease,outcome
+851,852,377558,Irregular astigmatism,outcome
+851,852,380706,Regular astigmatism,outcome
+851,852,132706,Disorder of nail,outcome
+851,852,139099,Ingrowing nail,outcome
+851,852,439776,Autism spectrum disorder,outcome
+851,852,74124,Traumatic arthropathy,outcome
+851,852,4298596,Post-traumatic scar,outcome
+851,852,436676,Posttraumatic stress disorder,outcome
+851,852,4028970,Tracheobronchitis,outcome
+851,852,318800,Gastroesophageal reflux disease,outcome
+851,852,75576,Irritable bowel syndrome,outcome
+872,873,4218106,Alcoholism,outcome
+872,873,440424,Aphasia,outcome
+872,873,378424,Astigmatism,outcome
+872,873,261880,Atelectasis,outcome
+872,873,80509,Bone cyst,outcome
+872,873,434626,Borderline personality disorder,outcome
+872,873,438407,Bulimia nervosa,outcome
+872,873,134765,Cachexia,outcome
+872,873,4172458,Candidiasis of skin,outcome
+872,873,381581,Chalazion,outcome
+872,873,4047787,Colles' fracture,outcome
+872,873,198075,Condyloma acuminatum of the anogenital region,outcome
+872,873,133228,Dental caries,outcome
+872,873,433440,Dysthymia,outcome
+872,873,376132,Ectropion,outcome
+872,873,74855,Genital herpes simplex,outcome
+872,873,195212,Hypercortisolism,outcome
+872,873,140362,Hypoparathyroidism,outcome
+872,873,439840,Lymphangitis,outcome
+872,873,436100,Narcolepsy,outcome
+872,873,4215978,Onychomycosis,outcome
+872,873,4171915,Orchitis,outcome
+872,873,380731,Otitis externa,outcome
+872,873,192606,Paraplegia,outcome
+872,873,4153877,Post-traumatic wound infection,outcome
+872,873,373478,Presbyopia,outcome
+872,873,194997,Prostatitis,outcome
+872,873,380395,Retinal dystrophy,outcome
+872,873,4339088,Testicular mass,outcome
+872,873,440814,Torticollis,outcome
+872,873,4028970,Tracheobronchitis,outcome
+872,873,4114197,Tumor of hypothalamus,outcome
+872,873,4092565,Uterine prolapse,outcome
+872,873,197036,Vesicoureteric reflux,outcome
+872,873,435613,Cellulitis,outcome
+872,873,4049417,Vesicular eczema,outcome
+872,873,436675,Anorexia nervosa,outcome
+872,873,432590,Delusional disorder,outcome
+872,873,194696,Dysmenorrhea,outcome
+872,873,4135082,Dislocation of distal radioulnar joint,outcome
+872,873,4001458,Fatigue fracture of vertebra,outcome
+872,873,440129,Hypertrophy of nasal turbinates,outcome
+872,873,380839,Tuberous sclerosis syndrome,outcome
+872,873,134619,Toxic nodular goiter,outcome
+872,873,377535,Sleep walking disorder,outcome
+872,873,4239381,Psychoactive substance abuse,outcome
+872,873,40443308,Polycystic ovary syndrome,outcome
+872,873,376938,Neurofibromatosis syndrome,outcome
+872,873,4304008,Memory impairment,outcome
+872,873,374655,Mastoiditis,outcome
+872,873,72418,Scoliosis deformity of spine,outcome
+872,873,4142905,Fracture of rib,outcome
+872,873,435093,Closed fracture of femur,outcome
+872,873,42873169,Sprain of shoulder rotator cuff,outcome
+872,873,316457,Mallory-Weiss syndrome,outcome
+872,873,436676,Posttraumatic stress disorder,outcome
+872,873,30234,Neck sprain,outcome
+872,873,74189,Sprain of cruciate ligament of knee,outcome
+872,873,139902,Allergic urticaria,outcome
+872,873,376707,Acute conjunctivitis,outcome
+872,873,437082,Ankylosing spondylitis,outcome
+872,873,198803,Benign prostatic hyperplasia,outcome
+872,873,377910,Deviated nasal septum,outcome
+872,873,134453,Bursitis,outcome
+872,873,138463,Aphthous ulcer of mouth,outcome
+872,873,199861,Perianal abscess,outcome
+872,873,4079750,Osteoarthritis of knee,outcome
+872,873,4150372,Acute otitis media,outcome
+872,873,141323,Acute maxillary sinusitis,outcome
+872,873,433527,Endometriosis (clinical),outcome
+872,873,140168,Psoriasis,outcome
+872,873,81878,Benign paroxysmal positional vertigo,outcome
+872,873,198202,Cystocele,outcome
+872,873,374366,Sensorineural hearing loss,outcome
+872,873,380094,Carpal tunnel syndrome,outcome
+872,873,77965,Acquired trigger finger,outcome
+872,873,72576,Benign tumor of breast,outcome
+872,873,4207307,Infective meningitis,outcome
+872,873,201792,Nongonococcal urethritis,outcome
+872,873,4131595,Fracture of radius,outcome
+872,873,4299544,Acanthosis nigricans,outcome
+872,873,30441,Sialolithiasis,outcome
+872,873,73300,Radial styloid tenosynovitis,outcome
+872,873,135215,Hashimoto thyroiditis,outcome
+872,873,4068482,Prolapsed lumbar intervertebral disc,outcome
+872,873,433450,Paranoid schizophrenia,outcome
+872,873,141933,Alopecia areata,outcome
+872,873,381444,Contusion of eye,outcome
+872,873,437116,Closed fracture of distal end of radius,outcome
+872,873,4140300,Compression fracture of lumbar spine,outcome
+872,873,4002998,"Fracture of crown of tooth, enamel and dentin, without pulp exposure",outcome
+872,873,4129394,Fracture of lumbar spine,outcome
+872,873,4320022,Fracture of orbit,outcome
+872,873,4134318,Fractured nasal bones,outcome
+872,873,4069306,Idiopathic osteoporosis with pathological fracture,outcome
+872,873,4069524,Osteoporotic fracture of lumbar vertebra,outcome
+872,873,4133612,Tooth crown fracture,outcome
+872,873,434500,Closed fracture of neck of femur,outcome
+872,873,78272,Sprain of wrist,outcome
+872,873,132466,Lumbar sprain,outcome
+872,873,30234,Neck sprain,outcome
+872,873,81151,Sprain of ankle,outcome
+872,873,4133015,Sprain of anterior cruciate ligament of knee,outcome
+872,873,40620346,Sprain of neck,outcome
+872,873,74194,Sprain of spinal ligament,outcome
+872,873,73649,Contusion of finger,outcome
+872,873,4167102,Laceration of finger,outcome
+872,873,436077,Developmental delay,outcome
+872,873,4031019,Allergic contact dermatitis,outcome
+872,873,134438,Contact dermatitis,outcome
+872,873,4031019,Allergic contact dermatitis,outcome
+872,873,133834,Atopic dermatitis,outcome
+872,873,137053,Seborrheic dermatitis,outcome
+872,873,4169287,Itching of skin,outcome
+872,873,4300441,Burn scar,outcome
+872,873,36713492,Non-erosive gastro-esophageal reflux disease,outcome
+872,873,377558,Irregular astigmatism,outcome
+872,873,380706,Regular astigmatism,outcome
+872,873,132706,Disorder of nail,outcome
+872,873,139099,Ingrowing nail,outcome
+872,873,439776,Autism spectrum disorder,outcome
+872,873,74124,Traumatic arthropathy,outcome
+872,873,4298596,Post-traumatic scar,outcome
+872,873,436676,Posttraumatic stress disorder,outcome
+872,873,4028970,Tracheobronchitis,outcome
+872,873,318800,Gastroesophageal reflux disease,outcome
+872,873,75576,Irritable bowel syndrome,outcome

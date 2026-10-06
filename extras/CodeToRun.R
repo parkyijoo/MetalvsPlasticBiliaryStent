@@ -12,8 +12,8 @@ outputFolder <- "s:/output"
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",
                                                                 server = Sys.getenv("PDW_SERVER"),
-                                                                user = Sys.getenv("PDW_USER"),
-                                                                password = Sys.getenv("PDW_PASSWORD"),
+                                                                user = NULL,
+                                                                password = NULL,
                                                                 port = Sys.getenv("PDW_PORT"))
 
 # The name of the database schema where the CDM data can be found:
@@ -40,10 +40,11 @@ execute(connectionDetails = connectionDetails,
         databaseId = databaseId,
         databaseName = databaseName,
         databaseDescription = databaseDescription,
-        createCohorts = TRUE,
-        synthesizePositiveControls = TRUE,
-        runAnalyses = TRUE,
-        packageResults = TRUE,
+        createCohorts = FALSE,
+        synthesizePositiveControls = FALSE, 
+        runAnalyses = FALSE,
+        runDiagnostics = TRUE,
+        packageResults = FALSE,
         maxCores = maxCores)
 
 resultsZipFile <- file.path(outputFolder, "export", paste0("Results_", databaseId, ".zip"))
@@ -51,9 +52,5 @@ dataFolder <- file.path(outputFolder, "shinyData")
 
 # You can inspect the results if you want:
 prepareForEvidenceExplorer(resultsZipFile = resultsZipFile, dataFolder = dataFolder)
-launchEvidenceExplorer(dataFolder = dataFolder, blind = TRUE, launch.browser = FALSE)
+launchEvidenceExplorer(dataFolder = dataFolder, blind = FALSE, launch.browser = FALSE)
 
-# Upload the results to the OHDSI SFTP server:
-privateKeyFileName <- ""
-userName <- ""
-uploadResults(outputFolder, privateKeyFileName, userName)

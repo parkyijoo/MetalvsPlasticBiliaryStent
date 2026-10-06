@@ -82,7 +82,7 @@ execute <- function(connectionDetails,
                     createCohorts = TRUE,
                     synthesizePositiveControls = TRUE,
                     runAnalyses = TRUE,
-                    runDiagnostics = TRUE,
+                    runDiagnostics = FALSE,
                     packageResults = TRUE,
                     maxCores = 4,
                     minCellCount= 5) {
@@ -131,7 +131,7 @@ execute <- function(connectionDetails,
   }
   
   if (runDiagnostics) {
-    ParallelLogger::logInfo("Running diagnostics") # add
+    ParallelLogger::logInfo("Running diagnostics")
     generateDiagnostics(outputFolder = outputFolder,
                         maxCores = maxCores)
   }

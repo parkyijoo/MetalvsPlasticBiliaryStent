@@ -31,23 +31,42 @@
       "id": 3
     },
     {
-      "expression": {"items": [{
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3000905,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "6690-2",
-          "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "Leukocytes [#/volume] in Blood by Automated count",
-          "DOMAIN_ID": "Measurement",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Lab Test",
-          "INVALID_REASON": "V"
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3000905,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "6690-2",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Leukocytes [#/volume] in Blood by Automated count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": false
-      }]},
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3010813,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "26464-8",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Leukocytes [#/volume] in Blood",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
       "name": "[yiju] WBC count",
       "id": 5
     },
@@ -73,23 +92,59 @@
       "id": 6
     },
     {
-      "expression": {"items": [{
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3010156,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "30522-7",
-          "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method",
-          "DOMAIN_ID": "Measurement",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Lab Test",
-          "INVALID_REASON": "V"
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3010156,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "30522-7",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": false
-      }]},
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4208414,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "55235003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "C-reactive protein measurement",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3020460,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1988-5",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
       "name": "[yiju] CRP",
       "id": 7
     }
@@ -111,11 +166,11 @@
             "StartWindow": {
               "UseEventEnd": false,
               "Start": {
-                "Days": 0,
+                "Days": 7,
                 "Coeff": -1
               },
               "End": {
-                "Days": 0,
+                "Days": 7,
                 "Coeff": 1
               },
               "UseIndexEnd": false
@@ -138,7 +193,7 @@
               "MeasurementSourceConcept": null,
               "VisitType": null,
               "ValueAsNumber": {
-                "Op": "gt",
+                "Op": "gte",
                 "Extent": null,
                 "Value": 2
               },
@@ -186,106 +241,55 @@
         "MeasurementTypeExclude": false,
         "ValueAsConcept": null,
         "CorrelatedCriteria": {
-          "CriteriaList": [
-            {
-              "RestrictVisit": false,
-              "StartWindow": {
-                "UseEventEnd": false,
-                "Start": {
-                  "Days": 0,
-                  "Coeff": -1
-                },
-                "End": {
-                  "Days": 0,
-                  "Coeff": 1
-                },
-                "UseIndexEnd": false
+          "CriteriaList": [{
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": 7,
+                "Coeff": -1
               },
-              "IgnoreObservationPeriod": false,
-              "EndWindow": null,
-              "Criteria": {"Measurement": {
-                "Operator": null,
-                "RangeHigh": null,
-                "MeasurementTypeExclude": false,
-                "ValueAsConcept": null,
-                "CorrelatedCriteria": null,
-                "RangeHighRatio": null,
-                "CodesetId": 7,
-                "ProviderSpecialty": null,
-                "Gender": null,
-                "Unit": null,
-                "RangeLowRatio": null,
-                "MeasurementType": null,
-                "MeasurementSourceConcept": null,
-                "VisitType": null,
-                "ValueAsNumber": {
-                  "Op": "gte",
-                  "Extent": null,
-                  "Value": 1
-                },
-                "First": null,
-                "OccurrenceStartDate": null,
-                "RangeLow": null,
-                "Abnormal": null,
-                "Age": null
-              }},
-              "Occurrence": {
-                "Type": 2,
-                "CountColumn": null,
-                "IsDistinct": false,
-                "Count": 1
-              }
+              "End": {
+                "Days": 7,
+                "Coeff": 1
+              },
+              "UseIndexEnd": false
             },
-            {
-              "RestrictVisit": false,
-              "StartWindow": {
-                "UseEventEnd": false,
-                "Start": {
-                  "Days": 0,
-                  "Coeff": -1
-                },
-                "End": {
-                  "Days": 0,
-                  "Coeff": 1
-                },
-                "UseIndexEnd": false
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"Measurement": {
+              "Operator": null,
+              "RangeHigh": null,
+              "MeasurementTypeExclude": false,
+              "ValueAsConcept": null,
+              "CorrelatedCriteria": null,
+              "RangeHighRatio": null,
+              "CodesetId": 3,
+              "ProviderSpecialty": null,
+              "Gender": null,
+              "Unit": null,
+              "RangeLowRatio": null,
+              "MeasurementType": null,
+              "MeasurementSourceConcept": null,
+              "VisitType": null,
+              "ValueAsNumber": {
+                "Op": "gte",
+                "Extent": null,
+                "Value": 2
               },
-              "IgnoreObservationPeriod": false,
-              "EndWindow": null,
-              "Criteria": {"Measurement": {
-                "Operator": null,
-                "RangeHigh": null,
-                "MeasurementTypeExclude": false,
-                "ValueAsConcept": null,
-                "CorrelatedCriteria": null,
-                "RangeHighRatio": null,
-                "CodesetId": 3,
-                "ProviderSpecialty": null,
-                "Gender": null,
-                "Unit": null,
-                "RangeLowRatio": null,
-                "MeasurementType": null,
-                "MeasurementSourceConcept": null,
-                "VisitType": null,
-                "ValueAsNumber": {
-                  "Op": "gt",
-                  "Extent": null,
-                  "Value": 2
-                },
-                "First": null,
-                "OccurrenceStartDate": null,
-                "RangeLow": null,
-                "Abnormal": null,
-                "Age": null
-              }},
-              "Occurrence": {
-                "Type": 2,
-                "CountColumn": null,
-                "IsDistinct": false,
-                "Count": 1
-              }
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RangeLow": null,
+              "Abnormal": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 2,
+              "CountColumn": null,
+              "IsDistinct": false,
+              "Count": 1
             }
-          ],
+          }],
           "Type": "ALL",
           "DemographicCriteriaList": [],
           "Groups": [],
@@ -301,9 +305,89 @@
         "MeasurementSourceConcept": null,
         "VisitType": null,
         "ValueAsNumber": {
-          "Op": "gt",
+          "Op": "!bt",
           "Extent": 10,
-          "Value": 10
+          "Value": 4
+        },
+        "First": null,
+        "OccurrenceStartDate": null,
+        "RangeLow": null,
+        "Abnormal": null,
+        "Age": null
+      }},
+      {"Measurement": {
+        "Operator": null,
+        "RangeHigh": null,
+        "MeasurementTypeExclude": false,
+        "ValueAsConcept": null,
+        "CorrelatedCriteria": {
+          "CriteriaList": [{
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": 7,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 7,
+                "Coeff": 1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"Measurement": {
+              "Operator": null,
+              "RangeHigh": null,
+              "MeasurementTypeExclude": false,
+              "ValueAsConcept": null,
+              "CorrelatedCriteria": null,
+              "RangeHighRatio": null,
+              "CodesetId": 3,
+              "ProviderSpecialty": null,
+              "Gender": null,
+              "Unit": null,
+              "RangeLowRatio": null,
+              "MeasurementType": null,
+              "MeasurementSourceConcept": null,
+              "VisitType": null,
+              "ValueAsNumber": {
+                "Op": "gte",
+                "Extent": null,
+                "Value": 2
+              },
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RangeLow": null,
+              "Abnormal": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 2,
+              "CountColumn": null,
+              "IsDistinct": false,
+              "Count": 1
+            }
+          }],
+          "Type": "ALL",
+          "DemographicCriteriaList": [],
+          "Groups": [],
+          "Count": null
+        },
+        "RangeHighRatio": null,
+        "CodesetId": 7,
+        "ProviderSpecialty": null,
+        "Gender": null,
+        "Unit": null,
+        "RangeLowRatio": null,
+        "MeasurementType": null,
+        "MeasurementSourceConcept": null,
+        "VisitType": null,
+        "ValueAsNumber": {
+          "Op": "gte",
+          "Extent": null,
+          "Value": 1
         },
         "First": null,
         "OccurrenceStartDate": null,

@@ -38,33 +38,28 @@ UNION  select c.concept_id
   and c.invalid_reason is null
 
 ) I
-) C;
+) C
+;
 
-UPDATE STATISTICS #Codesets;
-
-
-SELECT event_id, person_id, start_date, end_date, op_start_date, op_end_date, visit_occurrence_id
-INTO #qualified_events
-FROM 
+with primary_events (event_id, person_id, start_date, end_date, op_start_date, op_end_date, visit_occurrence_id) as
 (
-  select pe.event_id, pe.person_id, pe.start_date, pe.end_date, pe.op_start_date, pe.op_end_date, row_number() over (partition by pe.person_id order by pe.start_date ASC) as ordinal, cast(pe.visit_occurrence_id as bigint) as visit_occurrence_id
-  FROM (-- Begin Primary Events
+-- Begin Primary Events
 select P.ordinal as event_id, P.person_id, P.start_date, P.end_date, op_start_date, op_end_date, cast(P.visit_occurrence_id as bigint) as visit_occurrence_id
 FROM
 (
   select E.person_id, E.start_date, E.end_date,
-         row_number() OVER (PARTITION BY E.person_id ORDER BY E.sort_date ASC, E.event_id) ordinal,
+         row_number() OVER (PARTITION BY E.person_id ORDER BY E.sort_date ASC) ordinal,
          OP.observation_period_start_date as op_start_date, OP.observation_period_end_date as op_end_date, cast(E.visit_occurrence_id as bigint) as visit_occurrence_id
   FROM 
   (
   -- Begin Device Exposure Criteria
-select C.person_id, C.device_exposure_id as event_id, C.start_date, C.end_date,
-        C.visit_occurrence_id, C.start_date as sort_date
+select C.person_id, C.device_exposure_id as event_id, C.device_exposure_start_date as start_date, COALESCE(C.device_exposure_end_date, DATEADD(day,1,C.device_exposure_start_date)) as end_date,
+        C.visit_occurrence_id, C.device_exposure_start_date as sort_date
 from 
 (
-  select de.person_id,de.device_exposure_id,de.device_concept_id,de.visit_occurrence_id,de.quantity,de.device_exposure_start_date as start_date, COALESCE(de.device_exposure_end_date, DATEADD(day,1,de.device_exposure_start_date)) as end_date 
+  select de.* 
   FROM @cdm_database_schema.DEVICE_EXPOSURE de
-JOIN #Codesets cs on (de.device_concept_id = cs.concept_id and cs.codeset_id = 3)
+JOIN #Codesets codesets on ((de.device_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 
 
@@ -76,7 +71,14 @@ JOIN #Codesets cs on (de.device_concept_id = cs.concept_id and cs.codeset_id = 3
 ) P
 WHERE P.ordinal = 1
 -- End Primary Events
-) pe
+
+)
+SELECT event_id, person_id, start_date, end_date, op_start_date, op_end_date, visit_occurrence_id
+INTO #qualified_events
+FROM 
+(
+  select pe.event_id, pe.person_id, pe.start_date, pe.end_date, pe.op_start_date, pe.op_end_date, row_number() over (partition by pe.person_id order by pe.start_date ASC) as ordinal, cast(pe.visit_occurrence_id as bigint) as visit_occurrence_id
+  FROM primary_events pe
   
 ) QE
 
@@ -139,13 +141,13 @@ from (SELECT p.person_id, p.event_id
 FROM #qualified_events P
 JOIN (
   -- Begin Condition Occurrence Criteria
-SELECT C.person_id, C.condition_occurrence_id as event_id, C.start_date, C.end_date,
-  C.visit_occurrence_id, C.start_date as sort_date
+SELECT C.person_id, C.condition_occurrence_id as event_id, C.condition_start_date as start_date, COALESCE(C.condition_end_date, DATEADD(day,1,C.condition_start_date)) as end_date,
+  C.visit_occurrence_id, C.condition_start_date as sort_date
 FROM 
 (
-  SELECT co.person_id,co.condition_occurrence_id,co.condition_concept_id,co.visit_occurrence_id,co.condition_start_date as start_date, COALESCE(co.condition_end_date, DATEADD(day,1,co.condition_start_date)) as end_date 
+  SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 0)
+  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
 
@@ -189,13 +191,13 @@ SELECT p.person_id, p.event_id
 FROM #qualified_events P
 JOIN (
   -- Begin Condition Occurrence Criteria
-SELECT C.person_id, C.condition_occurrence_id as event_id, C.start_date, C.end_date,
-  C.visit_occurrence_id, C.start_date as sort_date
+SELECT C.person_id, C.condition_occurrence_id as event_id, C.condition_start_date as start_date, COALESCE(C.condition_end_date, DATEADD(day,1,C.condition_start_date)) as end_date,
+  C.visit_occurrence_id, C.condition_start_date as sort_date
 FROM 
 (
-  SELECT co.person_id,co.condition_occurrence_id,co.condition_concept_id,co.visit_occurrence_id,co.condition_start_date as start_date, COALESCE(co.condition_end_date, DATEADD(day,1,co.condition_start_date)) as end_date 
+  SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 1)
+  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 ) C
 
 
@@ -239,13 +241,13 @@ SELECT p.person_id, p.event_id
 FROM #qualified_events P
 JOIN (
   -- Begin Device Exposure Criteria
-select C.person_id, C.device_exposure_id as event_id, C.start_date, C.end_date,
-        C.visit_occurrence_id, C.start_date as sort_date
+select C.person_id, C.device_exposure_id as event_id, C.device_exposure_start_date as start_date, COALESCE(C.device_exposure_end_date, DATEADD(day,1,C.device_exposure_start_date)) as end_date,
+        C.visit_occurrence_id, C.device_exposure_start_date as sort_date
 from 
 (
-  select de.person_id,de.device_exposure_id,de.device_concept_id,de.visit_occurrence_id,de.quantity,de.device_exposure_start_date as start_date, COALESCE(de.device_exposure_end_date, DATEADD(day,1,de.device_exposure_start_date)) as end_date 
+  select de.* 
   FROM @cdm_database_schema.DEVICE_EXPOSURE de
-JOIN #Codesets cs on (de.device_concept_id = cs.concept_id and cs.codeset_id = 4)
+JOIN #Codesets codesets on ((de.device_concept_id = codesets.concept_id and codesets.codeset_id = 4))
 ) C
 
 
@@ -287,9 +289,8 @@ TRUNCATE TABLE #Inclusion_3;
 DROP TABLE #Inclusion_3;
 
 
-select event_id, person_id, start_date, end_date, op_start_date, op_end_date
-into #included_events
-FROM (
+with cteIncludedEvents(event_id, person_id, start_date, end_date, op_start_date, op_end_date, ordinal) as
+(
   SELECT event_id, person_id, start_date, end_date, op_start_date, op_end_date, row_number() over (partition by person_id order by start_date ASC) as ordinal
   from
   (
@@ -298,74 +299,88 @@ FROM (
     LEFT JOIN #inclusion_events I on I.person_id = Q.person_id and I.event_id = Q.event_id
     GROUP BY Q.event_id, Q.person_id, Q.start_date, Q.end_date, Q.op_start_date, Q.op_end_date
   ) MG -- matching groups
-
+{4 != 0}?{
   -- the matching group with all bits set ( POWER(2,# of inclusion rules) - 1 = inclusion_rule_mask
   WHERE (MG.inclusion_rule_mask = POWER(cast(2 as bigint),4)-1)
-
-) Results
+}
+)
+select event_id, person_id, start_date, end_date, op_start_date, op_end_date
+into #included_events
+FROM cteIncludedEvents Results
 WHERE Results.ordinal = 1
 ;
 
 
 
 -- generate cohort periods into #final_cohort
-select person_id, start_date, end_date
-INTO #cohort_rows
-from ( -- first_ends
+with cohort_ends (event_id, person_id, end_date) as
+(
+	-- cohort exit dates
+  -- By default, cohort exit at the event's op end date
+select event_id, person_id, op_end_date as end_date from #included_events
+),
+first_ends (person_id, start_date, end_date) as
+(
 	select F.person_id, F.start_date, F.end_date
 	FROM (
-	  select I.event_id, I.person_id, I.start_date, CE.end_date, row_number() over (partition by I.person_id, I.event_id order by CE.end_date) as ordinal
+	  select I.event_id, I.person_id, I.start_date, E.end_date, row_number() over (partition by I.person_id, I.event_id order by E.end_date) as ordinal 
 	  from #included_events I
-	  join ( -- cohort_ends
--- cohort exit dates
--- By default, cohort exit at the event's op end date
-select event_id, person_id, op_end_date as end_date from #included_events
-    ) CE on I.event_id = CE.event_id and I.person_id = CE.person_id and CE.end_date >= I.start_date
+	  join cohort_ends E on I.event_id = E.event_id and I.person_id = E.person_id and E.end_date >= I.start_date
 	) F
 	WHERE F.ordinal = 1
-) FE;
+)
+select person_id, start_date, end_date
+INTO #cohort_rows
+from first_ends;
 
-select person_id, min(start_date) as start_date, end_date
-into #final_cohort
-from ( --cteEnds
+with cteEndDates (person_id, end_date) AS -- the magic
+(	
+	SELECT
+		person_id
+		, DATEADD(day,-1 * 0, event_date)  as end_date
+	FROM
+	(
+		SELECT
+			person_id
+			, event_date
+			, event_type
+			, MAX(start_ordinal) OVER (PARTITION BY person_id ORDER BY event_date, event_type ROWS UNBOUNDED PRECEDING) AS start_ordinal 
+			, ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY event_date, event_type) AS overall_ord
+		FROM
+		(
+			SELECT
+				person_id
+				, start_date AS event_date
+				, -1 AS event_type
+				, ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY start_date) AS start_ordinal
+			FROM #cohort_rows
+		
+			UNION ALL
+		
+
+			SELECT
+				person_id
+				, DATEADD(day,0,end_date) as end_date
+				, 1 AS event_type
+				, NULL
+			FROM #cohort_rows
+		) RAWDATA
+	) e
+	WHERE (2 * e.start_ordinal) - e.overall_ord = 0
+),
+cteEnds (person_id, start_date, end_date) AS
+(
 	SELECT
 		 c.person_id
 		, c.start_date
-		, MIN(ed.end_date) AS end_date
+		, MIN(e.end_date) AS end_date
 	FROM #cohort_rows c
-	JOIN ( -- cteEndDates
-    SELECT
-      person_id
-      , DATEADD(day,-1 * 0, event_date)  as end_date
-    FROM
-    (
-      SELECT
-        person_id
-        , event_date
-        , event_type
-        , SUM(event_type) OVER (PARTITION BY person_id ORDER BY event_date, event_type ROWS UNBOUNDED PRECEDING) AS interval_status
-      FROM
-      (
-        SELECT
-          person_id
-          , start_date AS event_date
-          , -1 AS event_type
-        FROM #cohort_rows
-
-        UNION ALL
-
-
-        SELECT
-          person_id
-          , DATEADD(day,0,end_date) as end_date
-          , 1 AS event_type
-        FROM #cohort_rows
-      ) RAWDATA
-    ) e
-    WHERE interval_status = 0
-  ) ed ON c.person_id = ed.person_id AND ed.end_date >= c.start_date
+	JOIN cteEndDates e ON c.person_id = e.person_id AND e.end_date >= c.start_date
 	GROUP BY c.person_id, c.start_date
-) e
+)
+select person_id, min(start_date) as start_date, end_date
+into #final_cohort
+from cteEnds
 group by person_id, end_date
 ;
 
@@ -375,7 +390,6 @@ select @target_cohort_id as cohort_definition_id, person_id, start_date, end_dat
 FROM #final_cohort CO
 ;
 
-
 {0 != 0}?{
 -- BEGIN: Censored Stats
 
@@ -383,14 +397,14 @@ delete from @results_database_schema.cohort_censor_stats where cohort_definition
 
 -- END: Censored Stats
 }
-{0 != 0 & 3 != 0}?{
+{0 != 0 & 4 != 0}?{
 
 -- Create a temp table of inclusion rule rows for joining in the inclusion rule impact analysis
 
 select cast(rule_sequence as int) as rule_sequence
 into #inclusion_rules
 from (
-  SELECT CAST(0 as int) as rule_sequence UNION ALL SELECT CAST(1 as int) as rule_sequence UNION ALL SELECT CAST(2 as int) as rule_sequence
+  SELECT CAST(0 as int) as rule_sequence UNION ALL SELECT CAST(1 as int) as rule_sequence UNION ALL SELECT CAST(2 as int) as rule_sequence UNION ALL SELECT CAST(3 as int) as rule_sequence
 ) IR;
 
 

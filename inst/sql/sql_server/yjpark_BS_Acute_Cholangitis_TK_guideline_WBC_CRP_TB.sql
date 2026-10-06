@@ -13,7 +13,7 @@ SELECT 3 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ) C UNION ALL 
 SELECT 5 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3000905)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3000905,3010813)
 
 ) I
 ) C UNION ALL 
@@ -25,7 +25,7 @@ SELECT 6 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ) C UNION ALL 
 SELECT 7 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3010156)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3010156,4208414,3020460)
 
 ) I
 ) C UNION ALL 
@@ -170,7 +170,7 @@ from
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 
-WHERE C.value_as_number > 2.0000
+WHERE C.value_as_number >= 2.0000
 -- End Measurement Criteria
 
 ) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,-7,P.START_DATE) AND A.START_DATE <= DATEADD(day,7,P.START_DATE) ) cc 

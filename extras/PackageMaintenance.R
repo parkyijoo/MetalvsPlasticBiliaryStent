@@ -21,8 +21,8 @@ OhdsiRTools::updateCopyrightYearFolder()
 devtools::spell_check()
 
 # Create manual -----------------------------------------------------------
-unlink("extras/BS260205.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/BS260205.pdf")
+unlink("extras/BiliaryStent.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/BiliaryStent.pdf")
 
 # Create vignettes ---------------------------------------------------------
 rmarkdown::render("vignettes/UsingSkeletonPackage.Rmd",

@@ -7,13 +7,14 @@ CREATE TABLE #Codesets (
 INSERT INTO #Codesets (codeset_id, concept_id)
 SELECT 3 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3024128)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3024128, 4230543, 4195338, 3045524, 42344986, 42341665, 42338527, 42335682,
+																				  42350015, 42364600, 42344662, 42342022, 42338796, 42335768)
 
 ) I
 ) C UNION ALL 
 SELECT 5 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3000905)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3000905,3010813, 37208925, 4298431)
 
 ) I
 ) C UNION ALL 
@@ -25,7 +26,9 @@ SELECT 6 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ) C UNION ALL 
 SELECT 7 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3010156)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3010156,4208414,3020460, 42357700, 42344671, 42341227, 42338232, 42334681,
+																				  42357695, 42344414, 42341253, 42338182, 42335104, 42326584, 42344795, 42341188,
+																				  42337929, 42335254, 42330298, 42345099, 42342079, 42338854, 42334885)
 
 ) I
 ) C
@@ -49,7 +52,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 3))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
 
 WHERE C.value_as_number >= 2.0000
@@ -128,7 +131,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 5))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 5))
 ) C
 
 WHERE not (C.value_as_number >= 4.0000 and C.value_as_number <= 10.0000)
@@ -152,7 +155,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 7))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 7))
 ) C
 
 WHERE C.value_as_number >= 1.0000

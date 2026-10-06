@@ -31,23 +31,42 @@
       "id": 3
     },
     {
-      "expression": {"items": [{
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3000905,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "6690-2",
-          "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "Leukocytes [#/volume] in Blood by Automated count",
-          "DOMAIN_ID": "Measurement",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Lab Test",
-          "INVALID_REASON": "V"
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3000905,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "6690-2",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Leukocytes [#/volume] in Blood by Automated count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": false
-      }]},
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3010813,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "26464-8",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Leukocytes [#/volume] in Blood",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
       "name": "[yiju] WBC count",
       "id": 5
     },
@@ -73,23 +92,59 @@
       "id": 6
     },
     {
-      "expression": {"items": [{
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3010156,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "30522-7",
-          "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method",
-          "DOMAIN_ID": "Measurement",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Lab Test",
-          "INVALID_REASON": "V"
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3010156,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "30522-7",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": false
-      }]},
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4208414,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "55235003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "C-reactive protein measurement",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3020460,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1988-5",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "C reactive protein [Mass/volume] in Serum or Plasma",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
       "name": "[yiju] CRP",
       "id": 7
     }
