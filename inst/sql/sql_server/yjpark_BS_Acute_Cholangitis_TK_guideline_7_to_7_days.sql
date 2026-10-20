@@ -52,7 +52,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 3))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id) and codesets.codeset_id = 3)
 ) C
 
 WHERE C.value_as_number >= 2.0000
@@ -131,7 +131,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 5))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id) and codesets.codeset_id = 5)
 ) C
 
 WHERE not (C.value_as_number >= 4.0000 and C.value_as_number <= 10.0000)
@@ -155,7 +155,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id and codesets.codeset_id = 7))
+JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id) and codesets.codeset_id = 7)
 ) C
 
 WHERE C.value_as_number >= 1.0000
