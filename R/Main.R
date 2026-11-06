@@ -82,6 +82,7 @@ execute <- function(connectionDetails,
                     createCohorts = TRUE,
                     synthesizePositiveControls = TRUE,
                     runAnalyses = TRUE,
+                    runCompetingRisk = TRUE,
                     runDiagnostics = FALSE,
                     packageResults = TRUE,
                     maxCores = 4,
@@ -128,6 +129,18 @@ execute <- function(connectionDetails,
                     oracleTempSchema = oracleTempSchema,
                     outputFolder = outputFolder,
                     maxCores = maxCores)
+  }
+  
+  if (runCompetingRisk) {
+    ParallelLogger::logInfo("Running competing risk analysis")
+    # Complementary analysis: never let it abort the main pipeline.
+    tryCatch({
+      runCompetingRiskAnalysis(outputFolder = outputFolder,
+                               databaseId = databaseId,
+                               minCellCount = minCellCount)
+    }, error = function(e) {
+      ParallelLogger::logWarn("Competing risk analysis failed and was skipped: ", e$message)
+    })
   }
   
   if (runDiagnostics) {

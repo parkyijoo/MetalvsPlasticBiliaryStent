@@ -43,7 +43,8 @@ execute(connectionDetails = connectionDetails,
         createCohorts = FALSE,
         synthesizePositiveControls = FALSE, 
         runAnalyses = FALSE,
-        runDiagnostics = TRUE,
+        runCompetingRisk = TRUE,
+        runDiagnostics = FALSE,
         packageResults = FALSE,
         maxCores = maxCores)
 
