@@ -54,7 +54,7 @@ from
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id OR m.measurement_source_concept_id = codesets.concept_id) and codesets.codeset_id = 3)
 ) C
-S
+
 WHERE C.value_as_number >= 2.0000
 -- End Measurement Criteria
 
