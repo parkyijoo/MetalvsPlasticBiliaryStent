@@ -1,6 +1,6 @@
 # Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of TavrSavr
+# This file is part of BiliaryStent
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,18 +21,18 @@ utils::globalVariables(c("fgwt"))
 #'
 #' @description
 #' Complementary analysis accounting for the competing risk of death for the
-#' non-fatal outcomes of the TAVR versus SAVR comparative effectiveness study.
+#' non-fatal outcomes of the metal versus plastic biliary stent comparative
+#' effectiveness study.
 #'
 #' @details
-#' Severe aortic stenosis carries substantial mortality. All-cause death is a
-#' competing risk for the non-fatal outcomes (re-intervention, stroke, atrial
-#' fibrillation, myocardial infarction, new permanent pacemaker implantation,
-#' heart failure, aortic valve hospitalisation): once a patient dies these
-#' events can no longer occur. The complement of the Kaplan-Meier estimator
-#' (1-KM) overestimates absolute risk in this setting regardless of whether
-#' death is informative. This function therefore estimates absolute risks via
-#' the cumulative incidence function (CIF) and reports two complementary
-#' hazard models:
+#' Malignant biliary obstruction in pancreatic cancer carries substantial
+#' mortality. All-cause death is a competing risk for the non-fatal outcomes
+#' (acute cholangitis, re-intervention): once a patient dies these events can
+#' no longer occur. The complement of the Kaplan-Meier estimator (1-KM)
+#' overestimates absolute risk in this setting regardless of whether death is
+#' informative. This function therefore estimates absolute risks via the
+#' cumulative incidence function (CIF) and reports two complementary hazard
+#' models:
 #'
 #' \itemize{
 #'   \item Cause-specific Cox PH: \code{csHR} = rate of the event among those
@@ -44,13 +44,10 @@ utils::globalVariables(c("fgwt"))
 #' }
 #'
 #' Outcomes that are not subject to the competing risk of death are excluded
-#' via \code{excludedOutcomeIds}. By default this drops 856 (all-cause
-#' mortality, which IS the competing event) together with the two composite
-#' endpoints that already contain death as a component: 854 (all-cause
-#' mortality or disabling stroke) and 857 (all-cause mortality, inpatient
-#' stroke or aortic valve hospitalisation). Those three are analysed by the
-#' main CohortMethod pipeline (standard Cox PH + KM), where 1-KM is
-#' appropriate.
+#' via \code{excludedOutcomeIds}. By default this drops only 847 (all-cause
+#' mortality), which IS the competing event; none of the other outcomes is a
+#' composite that contains death. Death is analysed by the main CohortMethod
+#' pipeline (standard Cox PH + KM), where 1-KM is appropriate.
 #'
 #' Each model is fitted in the same population as the corresponding main
 #' result (the matched or PS-stratified population) and is stratified if and
@@ -82,11 +79,11 @@ utils::globalVariables(c("fgwt"))
 #'                             use forward slashes (/). The same \code{outputFolder} used in
 #'                             \code{\link{execute}}.
 #' @param databaseId           A short string for identifying the database (e.g. 'Synpuf').
-#' @param analysisIds          The CohortMethod analysis IDs to analyse. Defaults to the four
-#'                             estimation analyses (9-year and 5-year landmark, pathway-reduced
-#'                             covariate PS, 1:1 matching and stratification). Use \code{NULL} to
-#'                             run every analysis in \code{cmAnalysisList.json}; note that this
-#'                             multiplies runtime by roughly five.
+#' @param analysisIds          The CohortMethod analysis IDs to analyse. Defaults to the two
+#'                             365-day default-covariate PS analyses (1:1 matching and
+#'                             stratification). Use \code{NULL} to run every analysis in
+#'                             \code{cmAnalysisList.json}; note that this multiplies runtime by
+#'                             roughly twelve.
 #' @param deathOutcomeId       Cohort ID of the competing event, all-cause mortality.
 #' @param excludedOutcomeIds   Outcome IDs that are NOT subject to the competing risk of death and
 #'                             are therefore skipped. See details.
@@ -106,9 +103,9 @@ utils::globalVariables(c("fgwt"))
 #' @export
 runCompetingRiskAnalysis <- function(outputFolder,
                                      databaseId,
-                                     analysisIds = c(111, 112, 511, 512),
-                                     deathOutcomeId = 856,
-                                     excludedOutcomeIds = c(854, 856, 857),
+                                     analysisIds = c(301, 302),
+                                     deathOutcomeId = 847,
+                                     excludedOutcomeIds = c(847),
                                      targetComparatorPairs = NULL,
                                      cifTimeGridDays = 30,
                                      minCellCount = 5) {
@@ -209,7 +206,7 @@ runCompetingRiskAnalysis <- function(outputFolder,
 # createTcos(), but keeps only the outcomes of interest: negative and
 # synthesised positive controls are not part of this complementary analysis.
 getCompetingRiskTcos <- function(excludedOutcomeIds, targetComparatorPairs) {
-  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "TavrSavr")
+  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "BiliaryStent")
   tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
   tcs <- unique(tcosOfInterest[, c("targetId", "comparatorId")])
   if (!is.null(targetComparatorPairs)) {
@@ -235,7 +232,7 @@ getCompetingRiskTcos <- function(excludedOutcomeIds, targetComparatorPairs) {
 # stratifying here would stop the competing risk estimates from being
 # comparable to the main results.
 getStratifiedByAnalysisId <- function() {
-  cmAnalysisListFile <- system.file("settings", "cmAnalysisList.json", package = "TavrSavr")
+  cmAnalysisListFile <- system.file("settings", "cmAnalysisList.json", package = "BiliaryStent")
   cmAnalysisList <- CohortMethod::loadCmAnalysisList(cmAnalysisListFile)
   stratified <- lapply(cmAnalysisList, function(cmAnalysis) {
     isTRUE(cmAnalysis$fitOutcomeModelArgs$stratified)
@@ -245,10 +242,10 @@ getStratifiedByAnalysisId <- function() {
 }
 
 
-# Readable cohort names for the result tables. The ATLAS names
-# carry a '[26HIRAMDV] ' study prefix that only adds noise here.
+# Readable cohort names for the result tables. Strips a leading '[...]'
+# study prefix from the ATLAS name, if there is one.
 createCohortNameLookup <- function() {
-  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "TavrSavr")
+  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "BiliaryStent")
   cohortsToCreate <- read.csv(pathToCsv, stringsAsFactors = FALSE)
   function(cohortId) {
     name <- cohortsToCreate$atlasName[cohortsToCreate$cohortId == cohortId]
